@@ -46,7 +46,7 @@ function watch() {
   gulp.watch(paths.scripts.src, scripts);
 }
 
-gulp.task("build", function () {
+gulp.task("build", async function () {
   gulp.src(paths.scripts.src).pipe(minify()).pipe(gulp.dest("static/dist/js"));
   gulp
     .src(paths.styles_css.src)
