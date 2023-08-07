@@ -1,7 +1,13 @@
-### Hola ! este es mi web personal
+#### Hi 👋 
 
-# npm install
+Mi web personal esta en construcción 🚀
 
-# npm run watch
+##### Instalar el paquete :
+```
+ npm install
+```
 
-# gulp watch
+##### Ejecutar un proyecto
+``` 
+npm run watch || gulp watch
+```
