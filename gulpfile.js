@@ -46,6 +46,19 @@ function watch() {
   gulp.watch(paths.scripts.src, scripts);
 }
 
+gulp.task("build", function () {
+  gulp.src(paths.scripts.src).pipe(minify()).pipe(gulp.dest("static/dist/js"));
+  gulp
+    .src(paths.styles_css.src)
+    .pipe(cssmin())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("static/dist/css"));
+  gulp
+    .src(paths.images.src)
+    .pipe(imagemin())
+    .pipe(gulp.dest("static/dist/images"));
+});
+
 exports.watch = watch;
 
 var paths = {
