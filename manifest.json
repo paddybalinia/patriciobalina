@@ -7,7 +7,7 @@
       "src": "static/dist/images/apps/precomposed-128.png",
       "type": "image/png",
       "sizes": "128x128",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
       "src": "static/dist/images/apps/precomposed-256.png",
