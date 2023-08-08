@@ -75,7 +75,7 @@ var paths = {
     dest: "static/dist/js",
   },
   images: {
-    src: "static/src/images/*",
+    src: "static/src/images/**/*",
     dest: "static/dist/images",
   },
 };
