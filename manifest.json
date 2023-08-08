@@ -1,0 +1,32 @@
+{
+  "short_name": "Patricio Balina",
+  "name": "Patricio Balina",
+  "description": "Sitio web personal de Patricio Baliña",
+  "icons": [
+    {
+      "src": "static/dist/images/apps/precomposed-128.jpg",
+      "type": "image/jpg",
+      "sizes": "128x128"
+    },
+    {
+      "src": "static/dist/images/apps/precomposed-256.jpg",
+      "type": "image/jpg",
+      "sizes": "256x256"
+    },
+    {
+      "src": "static/dist/images/apps/precomposed-384.jpg",
+      "type": "image/jpg",
+      "sizes": "384x384"
+    },
+    {
+      "src": "static/dist/images/apps/precomposed-512.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#000",
+  "orientation": "portrait",
+  "theme_color": "#000",
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}
