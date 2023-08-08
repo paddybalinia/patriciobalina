@@ -4,23 +4,23 @@
   "description": "Sitio web personal de Patricio Baliña",
   "icons": [
     {
-      "src": "static/dist/images/apps/precomposed-128.jpg",
-      "type": "image/jpg",
+      "src": "static/dist/images/apps/precomposed-128.png",
+      "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "static/dist/images/apps/precomposed-256.jpg",
-      "type": "image/jpg",
+      "src": "static/dist/images/apps/precomposed-256.png",
+      "type": "image/png",
       "sizes": "256x256"
     },
     {
-      "src": "static/dist/images/apps/precomposed-384.jpg",
-      "type": "image/jpg",
+      "src": "static/dist/images/apps/precomposed-384.png",
+      "type": "image/png",
       "sizes": "384x384"
     },
     {
-      "src": "static/dist/images/apps/precomposed-512.jpg",
-      "type": "image/jpg",
+      "src": "static/dist/images/apps/precomposed-512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
