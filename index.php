@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -55,13 +56,20 @@
     <meta name="theme-color" content="#000" />
 
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="static/dist/css/style.min.css" />
+
+    <style>
+        <?php
+        include_once 'static/dist/css/style-inline.min.css';
+        ?>
+    </style>
+
+
 </head>
 
 <body>
     <div class="splash">
         <h2 class="splash__title">
-            En construcción. Vuelve pronto.
+           <span class="splash__span">En construcción</span>  Vuelve pronto.
         </h2>
     </div>
     <script>
