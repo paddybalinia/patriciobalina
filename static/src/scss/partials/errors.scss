@@ -1,0 +1,25 @@
+@import '../vars.scss';
+
+.error {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+
+    &__span {
+        display: block;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 45px;
+            height: 1px;
+            background: white;
+            margin: -2px auto 11px;
+        }
+    }
+}

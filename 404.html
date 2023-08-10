@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error | Patricio Baliña | Frontend Developer</title>
+
+    <meta name="title" content="404 Error | Patricio Baliña | Frontend Developer">
+    <meta name="description"
+        content="Desarrollador Frontend con más de 10 años de experiencia. Me considero una persona organizada y responsable, y disfruto trabajar en equipo para lograr resultados ambicioso">
+    <meta name="keywords" content="Frontend Developer, HTML, CSS, Javascript, React, Github">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="404 Error | Patricio Baliña | Frontend Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Desarrollador Frontend con más de 10 años de experiencia. Me considero una persona organizada y responsable, y disfruto trabajar en equipo para lograr resultados ambicioso" />
+    <meta property="og:url" content="https://patriciobalina.vercel.app/404.html">
+
+    <!-- facebook -->
+    <meta property="og:image" content="static/dist/images/apps/facebook.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- wsp -->
+    <meta property="og:image" content="static/dist/images/apps/wsp.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:site_name" content="Patricio Baliña" />
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Patricio Baliña | Frontend Developer" />
+    <meta name="twitter:image" content="static/dist/images/apps/twitter-summary-card.jpg" />
+    <meta name="twitter:site" content="https://twitter.com/paddybalinia" />
+    <meta name="twitter:creator" content="Patricio Baliña" />
+    <meta name="twitter:url" content="paddybalinia" />
+    <meta name="twitter:domain" content="https://patriciobalina.vercel.app/">
+    <meta name="twitter:description"
+        content="Desarrollador Frontend con más de 10 años de experiencia. Me considero una persona organizada y responsable, y disfruto trabajar en equipo para lograr resultados ambicioso" />
+
+    <!-- application -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Patricio Baliña" />
+    <link rel="icon" sizes="192x192" href="static/dist/images/apps/favicon.jpg" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <meta name="apple-mobile-web-app-title" content="Patricio Baliña">
+    <link rel="apple-touch-icon" href="static/dist/images/apps/precomposed-180.png">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileImage" content="static/dist/images/apps/precomposed-144.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#000" />
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="static/dist/css/errors.min.css">
+
+
+</head>
+
+<body>
+    <div class="error">
+        <h2 class="error__title">
+            <span class="error__span">404</span> Page not found.
+        </h2>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch(error => {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>
