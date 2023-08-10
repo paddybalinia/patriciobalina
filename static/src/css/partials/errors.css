@@ -1,4 +1,4 @@
-.splash {
+.error {
   background: black;
   color: white;
   display: flex;
@@ -8,13 +8,15 @@
   height: 100vh;
   width: 100vw;
 }
-.splash__icon {
-  height: auto;
-  margin: 0 0 30px;
-  width: 90px;
-}
-.splash__span {
+.error__span {
   display: block;
-  font-size: 36px;
-  margin: 0 0 5px;
+  font-size: 108px;
+}
+.error__span:after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 1px;
+  background: white;
+  margin: -2px auto 11px;
 }
