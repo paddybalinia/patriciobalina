@@ -10,6 +10,7 @@
 }
 .error__span {
   display: block;
+  font-size: 108px;
 }
 .error__span:after {
   content: "";

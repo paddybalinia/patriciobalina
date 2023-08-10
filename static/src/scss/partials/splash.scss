@@ -10,7 +10,15 @@
     height: 100vh;
     width: 100vw;
 
+    &__icon {
+        height: auto;
+        margin: 0 0 30px;
+        width: 90px;
+    }
+
     &__span {
         display: block;
+        font-size: 36px;
+        margin: 0 0 5px;
     }
 }
