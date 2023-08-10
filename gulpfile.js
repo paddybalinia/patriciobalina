@@ -49,6 +49,14 @@ function watch() {
 gulp.task("build", async function () {
   gulp.src(paths.scripts.src).pipe(minify()).pipe(gulp.dest("static/dist/js"));
   gulp
+    .src(paths.styles_scss.src)
+    .pipe(
+      scss({
+        bundleExec: true,
+      })
+    )
+    .pipe(gulp.dest("static/src/css"));
+  gulp
     .src(paths.styles_css.src)
     .pipe(cssmin())
     .pipe(rename({ suffix: ".min" }))
@@ -63,11 +71,11 @@ exports.watch = watch;
 
 var paths = {
   styles_scss: {
-    src: "static/src/scss/**/*.scss",
-    dest: "static/src/css",
+    src: ["static/src/scss/**/*.scss", "!static/src/scss/vars.scss"],
+    dest: ["static/src/css"],
   },
   styles_css: {
-    src: "static/src/css/style.css",
+    src: "static/src/css/*.css",
     dest: "static/dist/css",
   },
   scripts: {

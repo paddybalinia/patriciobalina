@@ -55,13 +55,111 @@
     <meta name="theme-color" content="#000" />
 
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="static/dist/css/style.min.css" />
+
+    <style type="text/css">
+        button,
+        fieldset,
+        img {
+            border: none
+        }
+
+        :focus,
+        a,
+        button {
+            outline: 0
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth
+        }
+
+        body {
+            background-color: #FFF;
+            color: #000;
+            font: 1rem/1.1 Arial, sans-serif;
+            margin: 0;
+            padding-top: 0
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0
+        }
+
+        figure,
+        li,
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        img {
+            vertical-align: top;
+            text-indent: -9999px
+        }
+
+        fieldset {
+            padding: 0;
+            margin: 0
+        }
+
+        button {
+            background: 0 0;
+            cursor: pointer;
+            padding: 0
+        }
+
+        input,
+        input:focus {
+            font-size: 16px
+        }
+
+        :focus {
+            box-shadow: none
+        }
+
+        .splash {
+            background: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            width: 100vw
+        }
+
+        .splash__span {
+            display: block
+        }
+    </style>
+
+
 </head>
 
 <body>
     <div class="splash">
         <h2 class="splash__title">
-            En construcción. Vuelve pronto.
+            <span class="splash__span">En construcción</span> Vuelve pronto.
         </h2>
     </div>
     <script>

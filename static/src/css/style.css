@@ -1,83 +1,13 @@
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #FFFFFF;
-  color: black;
-  font: 1rem/1.1 "Arial", sans-serif;
-  margin: 0;
-  padding-top: 0;
-}
-
-a {
-  text-decoration: none;
-  outline: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-figure,
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  border: none;
-  vertical-align: top;
-  text-indent: -9999px;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: 0;
-  padding: 0;
-}
-
-input:focus,
-input {
-  font-size: 16px;
-}
-
-*:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 .splash {
   background: black;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 100vh;
   width: 100vw;
+}
+.splash__span {
+  display: block;
 }
