@@ -7,12 +7,19 @@ const scss = require("gulp-sass")(require("sass"));
 
 const minify = require("gulp-minify");
 
+const autoprefixer = require("gulp-autoprefixer");
+
 function styles_scss() {
   return gulp
     .src(paths.styles_scss.src)
     .pipe(
       scss({
         bundleExec: true,
+      })
+    )
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: [" > .5%, last 2 versions"], // Define la lista de navegadores viejos aquí
       })
     )
     .pipe(gulp.dest(paths.styles_scss.dest));
@@ -53,6 +60,11 @@ gulp.task("build", async function () {
     .pipe(
       scss({
         bundleExec: true,
+      })
+    )
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: [" > .5%, last 2 versions"], // Define la lista de navegadores viejos aquí
       })
     )
     .pipe(gulp.dest("static/src/css"));
