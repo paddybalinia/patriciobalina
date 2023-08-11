@@ -10,6 +10,10 @@
     height: 100vh;
     width: 100vw;
 
+    &__title {
+        max-width: 200px;
+    }
+
     &__span {
         display: block;
         font-size: 108px;
