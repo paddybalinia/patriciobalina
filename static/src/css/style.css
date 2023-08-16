@@ -11,7 +11,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 .splash__icon {
