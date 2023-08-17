@@ -60,7 +60,7 @@ function combineScripts() {
   const jsFiles = [
     "static/src/js/partials/Header.js",
     "static/src/js/partials/ViewportObserver.js",
-    // "static/src/js/partials/footer.js",
+    "static/src/js/partials/ScrollIntoView.js",
   ];
 
   return gulp
