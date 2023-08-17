@@ -5,6 +5,7 @@ const rename = require("gulp-rename");
 const scss = require("gulp-sass")(require("sass"));
 const minify = require("gulp-minify");
 const autoprefixer = require("gulp-autoprefixer");
+const concat = require("gulp-concat");
 
 const paths = {
   styles_scss: {
@@ -25,7 +26,7 @@ const paths = {
   },
 };
 
-function styles_scss() {
+function compileSass() {
   return gulp
     .src(paths.styles_scss.src)
     .pipe(scss({ bundleExec: true }))
@@ -33,7 +34,7 @@ function styles_scss() {
     .pipe(gulp.dest(paths.styles_scss.dest));
 }
 
-function styles_css() {
+function minifyCSS() {
   return gulp
     .src(paths.styles_css.src)
     .pipe(cssmin())
@@ -41,30 +42,48 @@ function styles_css() {
     .pipe(gulp.dest(paths.styles_css.dest));
 }
 
-function scripts() {
+function minifyScripts() {
   return gulp
     .src(paths.scripts.src)
     .pipe(minify())
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
-function images() {
+function optimizeImages() {
   return gulp
     .src(paths.images.src)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
 }
 
-async function build() {
-  await Promise.all([scripts(), styles_scss(), styles_css(), images()]);
+function combineScripts() {
+  const jsFiles = [
+    "static/src/js/partials/Header.js",
+    "static/src/js/partials/ViewportObserver.js",
+    // "static/src/js/partials/footer.js",
+  ];
+
+  return gulp
+    .src(jsFiles)
+    .pipe(concat("Home.js"))
+    .pipe(gulp.dest("static/src/js"));
 }
 
-function watch() {
-  gulp.watch(paths.images.src, images);
-  gulp.watch(paths.styles_scss.src, styles_scss);
-  gulp.watch(paths.styles_css.src, styles_css);
-  gulp.watch(paths.scripts.src, scripts);
+function watchFiles() {
+  gulp.watch(paths.images.src, optimizeImages);
+  gulp.watch(paths.styles_scss.src, compileSass);
+  gulp.watch(paths.styles_css.src, minifyCSS);
+  gulp.watch(paths.scripts.src, minifyScripts);
 }
 
-exports.build = build;
-exports.watch = watch;
+const buildTasks = gulp.parallel(
+  compileSass,
+  minifyCSS,
+  minifyScripts,
+  optimizeImages,
+  combineScripts
+);
+
+exports.build = buildTasks;
+exports.watch = gulp.series(buildTasks, watchFiles);
+exports.default = buildTasks;
