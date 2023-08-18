@@ -17,7 +17,7 @@ const paths = {
     dest: "static/dist/css",
   },
   scripts: {
-    src: "static/src/js/*.js",
+    src: "static/src/js/**/*.js",
     dest: "static/dist/js",
   },
   images: {
@@ -56,13 +56,14 @@ function optimizeImages() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
-function combineScripts() {
-  const jsFiles = [
-    "static/src/js/partials/Header.js",
-    "static/src/js/partials/ViewportObserver.js",
-    "static/src/js/partials/ScrollIntoView.js",
-  ];
+const jsFiles = [
+  "static/src/js/partials/Header.js",
+  "static/src/js/partials/LazyLoadImg.js",
+  "static/src/js/partials/ScrollIntoView.js",
+  "static/src/js/partials/ViewportObserver.js",
+];
 
+function combineScripts() {
   return gulp
     .src(jsFiles)
     .pipe(concat("Home.js"))
@@ -73,6 +74,7 @@ function watchFiles() {
   gulp.watch(paths.images.src, optimizeImages);
   gulp.watch(paths.styles_scss.src, compileSass);
   gulp.watch(paths.styles_css.src, minifyCSS);
+  gulp.watch(jsFiles, combineScripts);
   gulp.watch(paths.scripts.src, minifyScripts);
 }
 
