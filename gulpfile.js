@@ -24,6 +24,10 @@ const paths = {
     src: "static/src/images/**/*",
     dest: "static/dist/images",
   },
+  fonts: {
+    src: "static/src/fonts/**/*",
+    dest: "static/dist/fonts",
+  },
 };
 
 function compileSass() {
@@ -55,6 +59,12 @@ function optimizeImages() {
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
 }
+function optimizeFonts() {
+  return gulp
+    .src(paths.fonts.src)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.fonts.dest));
+}
 
 const jsFiles = [
   "static/src/js/partials/Header.js",
@@ -76,6 +86,7 @@ function watchFiles() {
   gulp.watch(paths.styles_css.src, minifyCSS);
   gulp.watch(jsFiles, combineScripts);
   gulp.watch(paths.scripts.src, minifyScripts);
+  gulp.watch(paths.fonts.src, optimizeFonts);
 }
 
 const buildTasks = gulp.parallel(
@@ -83,7 +94,8 @@ const buildTasks = gulp.parallel(
   minifyCSS,
   minifyScripts,
   optimizeImages,
-  combineScripts
+  combineScripts,
+  optimizeFonts
 );
 
 exports.build = buildTasks;
