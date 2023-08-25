@@ -1,0 +1,134 @@
+@import '../vars.scss';
+
+body {
+    height: 100vh;
+    //overflow: hidden;
+}
+
+.section--home {
+    background: #111111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+
+
+    &:before {
+        content: '';
+        --size: 250px;
+        --speed: 40s;
+        --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+        width: var(--size);
+        height: var(--size);
+        filter: blur(calc(var(--size) / 5));
+        background-image: linear-gradient(rgba(55, 235, 169, 60%), rgba(91, 55, 235, 60%));
+        animation: rotate var(--speed) var(--easing) alternate infinite;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        position: absolute;
+
+    }
+}
+
+.home {
+    padding: 0 0 50px;
+
+    &__span {
+        display: block;
+
+        &-med {
+            font: 400 28px/33px $font-primary;
+        }
+
+        &-big {
+            font: bold 39px/42px $font-primary;
+        }
+
+        &-sma {
+            font: 400 24px/28px $font-primary;
+            color: $color-secondary;
+            margin: 12px 0 0;
+        }
+    }
+
+    &__desc {
+        font: 400 16px/22px $font-primary;
+        margin: 40px auto 70px;
+        max-width: 333px;
+    }
+
+
+
+    &__scroll {
+        position: absolute;
+        bottom: 30px;
+        height: 50px;
+        width: 50px;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+            border-bottom: 4px solid white;
+            border-right: 4px solid white;
+            position: relative;
+            left: 16px;
+        }
+
+        &:before {
+            animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+
+        &:after {
+            animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes down-arrow-before {
+    50% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+}
+
+@keyframes down-arrow-after {
+    50% {
+        transform: rotate(45deg) translate(110%, 110%);
+        opacity: 0;
+    }
+
+    51% {
+        transform: rotate(45deg) translate(-130%, -130%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(-70%, -70%);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 720px) {
+    .section--home:before {
+        --size: 500px;
+    }
+}

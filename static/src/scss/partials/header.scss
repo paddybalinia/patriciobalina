@@ -1,9 +1,40 @@
 @import '../vars.scss';
 
 .header {
-    background-color: $color-azul;
     font-size: 22px;
-    color: $color-terc;
-    height: 22px;
-    border: 1px;
+    color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &__right {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        display: none;
+    }
+
+    &__toggle {
+        position: absolute;
+        right: 5px;
+        top: 11px;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 15px;
+        top: 17px;
+
+        &__svg {
+            height: 18px;
+            width: auto;
+        }
+    }
+
+    &__ul,
+    .social {
+        display: flex;
+        gap: 20px
+    }
 }
