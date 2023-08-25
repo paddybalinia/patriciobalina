@@ -1,7 +1,37 @@
 .header {
-  background-color: #006598;
   font-size: 22px;
-  color: #737373;
-  height: 22px;
-  border: 1px;
+  color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: none;
+}
+.header__toggle {
+  position: absolute;
+  right: 5px;
+  top: 11px;
+}
+.header__logo {
+  position: absolute;
+  left: 15px;
+  top: 17px;
+}
+.header__logo__svg {
+  height: 18px;
+  width: auto;
+}
+.header__ul,
+.header .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
