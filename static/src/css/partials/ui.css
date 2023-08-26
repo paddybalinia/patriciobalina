@@ -6,6 +6,24 @@
   width: 100%;
 }
 
+[data-lazyload] {
+  opacity: 0;
+}
+
+.mod__header__title {
+  font: 700 19px/22px "Roboto", sans-serif;
+  color: #1CD3C1;
+  margin: 0 0 15px;
+}
+.mod__header__title::after {
+  content: "";
+  background: #1CD3C1;
+  display: block;
+  height: 2px;
+  margin: 2px 0 0;
+  width: 35px;
+}
+
 .button {
   padding: 12px 30px 10px;
   background: #1CD3C1;
@@ -67,4 +85,73 @@
 .button:hover::before {
   opacity: 1;
   right: 14px;
+}
+
+.social__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.social__a {
+  position: relative;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.social__a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social__a:hover {
+  background: white;
+  color: black;
+}
+.social__a:hover svg {
+  fill: black;
+}
+.social__a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.social__svg {
+  fill: white;
+  height: auto;
+  width: 20px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.social__svg--tel {
+  width: 22px;
+}
+.social__svg--git {
+  width: 27px;
 }

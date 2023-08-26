@@ -1,3 +1,8 @@
+.section--about {
+  background: #F1F1F1;
+  padding: 42px 0 35px;
+}
+
 .mod__about__text {
   font: 400 16px/22px "Roboto", sans-serif;
   margin: 0 0 30px;

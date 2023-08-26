@@ -1,1 +1,66 @@
 @import '../vars.scss';
+
+.work {
+    &__li {
+        padding: 10px 15px 20px;
+        margin: 0 -15px;
+
+        &+.work__li {
+            border-top: 1px solid #DDD;
+            padding: 20px 15px;
+        }
+    }
+
+    &__more {
+        text-align: center;
+        padding: 10px 0;
+
+        &__text {
+            font: 700 20px/24px $font-primary;
+            margin: 5px auto 21px;
+            max-width: 210px;
+        }
+    }
+}
+
+.work-item {
+    &__years {
+        font: 700 16px/19px $font-primary;
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    &__title {
+        font: 400 20px/22px $font-primary;
+        color: $color-secondary;
+        margin: 0 0;
+    }
+
+    &__subtitle {
+        font: 700 20px/22px $font-primary;
+        color: $color-secondary;
+        display: block;
+        margin: 0 0 10px;
+    }
+
+    &__desc {
+        font: 400 15px/19px $font-primary;
+        margin: 0 0 19px;
+    }
+
+    &__ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__skill {
+        background: $color-secondary;
+        display: block;
+        font: 700 13px/13px $font-primary;
+        color: white;
+        border-radius: 4px;
+        text-transform: uppercase;
+        padding: 7px 10px 6px;
+    }
+}

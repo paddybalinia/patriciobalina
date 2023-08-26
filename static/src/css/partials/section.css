@@ -1,0 +1,79 @@
+.section--home {
+  background: #111111;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100vw;
+  max-height: 100vh;
+}
+.section--home:before {
+  content: "";
+  height: 250px;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 235, 169, 0.6)), to(rgba(91, 55, 235, 0.6)));
+  background-image: linear-gradient(rgba(55, 235, 169, 0.6), rgba(91, 55, 235, 0.6));
+  -webkit-animation: rotate 40s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+          animation: rotate 40s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  position: absolute;
+  width: 250px;
+}
+.section--about {
+  background: #f1f1f1;
+  padding: 42px 0 0;
+  position: relative;
+  -webkit-box-shadow: 0px 16px 15px 4px #f1f1f1;
+          box-shadow: 0px 16px 15px 4px #f1f1f1;
+  z-index: 2;
+}
+.section--work {
+  padding: 42px 0 32px;
+}
+.section--contact {
+  -webkit-box-shadow: 0 0 14px 20px #18fdf1;
+          box-shadow: 0 0 14px 20px #18fdf1;
+  padding: 20px 0 50px;
+  background: linear-gradient(45deg, rgb(0, 171, 194) 0%, rgb(206, 253, 247) 27%, rgb(141, 246, 234) 40%, rgb(63, 238, 218) 56%, rgb(0, 184, 177) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(91, 55, 235, 0.5803921569)), color-stop(50%, #3feeda), to(#00fff5));
+  background: linear-gradient(0deg, rgba(91, 55, 235, 0.5803921569) 0, #3feeda 50%, #00fff5 100%);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@media (min-width: 768px) {
+  .section--home:before {
+    width: 500px;
+    height: 500px;
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
+  }
+}

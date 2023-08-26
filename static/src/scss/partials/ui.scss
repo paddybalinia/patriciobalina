@@ -8,6 +8,30 @@
     width: 100%;
 }
 
+[data-lazyload] {
+    opacity: 0;
+}
+
+.mod {
+    &__header {
+
+        &__title {
+            font: 700 19px/22px $font-primary;
+            color: $color-secondary;
+            margin: 0 0 15px;
+
+            &::after {
+                content: '';
+                background: $color-secondary;
+                display: block;
+                height: 2px;
+                margin: 2px 0 0;
+                width: 35px;
+            }
+        }
+    }
+}
+
 .button {
     padding: 12px 30px 10px;
     background: $color-secondary;
@@ -57,7 +81,6 @@
     margin-top: -1px;
 }
 
-
 .button:hover {
     padding: 12px 50px 10px 10px;
 }
@@ -66,4 +89,90 @@
 .button:hover::before {
     opacity: 1;
     right: 14px;
+}
+
+.social {
+    &__ul {
+        display: flex;
+    }
+
+    &__a {
+        position: relative;
+        height: 40px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background: black;
+        color: white;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        transition: all 0.2s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            transition: all 0.2s ease;
+            border-radius: 50%;
+            opacity: 0;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255, .3);
+            transform: scale(0.8);
+        }
+
+        &:hover {
+            background: white;
+            color: black;
+
+            & svg {
+                fill: black;
+            }
+
+            &::after {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        &--secondary {
+            background: $color-secondary;
+
+            &:hover {
+                background: black;
+                color: white;
+
+                & svg {
+                    fill: white;
+                }
+
+                &::after {
+                    transform: scale(1);
+                    opacity: 1;
+                    box-shadow: 0 0 0 1px rgb(0, 0, 0, .3);
+                }
+            }
+        }
+    }
+
+    &__svg {
+        fill: white;
+        height: auto;
+        width: 20px;
+        transition: all 0.2s ease;
+
+        &--tel {
+            width: 22px;
+        }
+
+        &--git {
+            width: 27px;
+        }
+    }
+
+
 }

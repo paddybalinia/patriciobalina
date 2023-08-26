@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 22px 20px 0;
+  color: white;
+  -webkit-transform: translate(110%, 0);
+          transform: translate(110%, 0);
+  -webkit-transition: -webkit-transform 0.3s 0.1s;
+  transition: -webkit-transform 0.3s 0.1s;
+  transition: transform 0.3s 0.1s;
+  transition: transform 0.3s 0.1s, -webkit-transform 0.3s 0.1s;
+  z-index: 301;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.nav.active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.nav__toggle {
+  width: 40px;
+  height: 40px;
+  margin: -10px -11px 0;
+}
+.nav__ul {
+  text-align: right;
+}
+.nav__logo__svg {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
