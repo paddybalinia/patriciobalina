@@ -4,8 +4,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-  -webkit-transition: inherit;
-  transition: inherit;
 }
 .header__right {
   display: -webkit-box;
