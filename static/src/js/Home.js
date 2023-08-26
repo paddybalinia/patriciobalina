@@ -59,8 +59,11 @@
   function update() {
     const menuLinks = document.querySelectorAll(".header__ul a");
 
-    Header.classList[lastScrollY >= startSticky - 50 ? "add" : "remove"](
+    Header.classList[lastScrollY >= startSticky - 350 ? "add" : "remove"](
       "header--beforesticky"
+    );
+    Header.classList[lastScrollY >= startSticky - 150 ? "add" : "remove"](
+      "header--animation"
     );
     Header.classList[lastScrollY >= startSticky ? "add" : "remove"](
       "header--sticky"

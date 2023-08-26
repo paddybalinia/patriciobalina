@@ -383,6 +383,10 @@ input {
   display: flex;
   gap: 20px;
 }
+.header--animation {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .header--beforesticky {
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2509803922);
@@ -430,7 +434,7 @@ input {
 }
 .section--about {
   background: #f1f1f1;
-  padding: 42px 0 0;
+  padding: 25px 0 0;
   position: relative;
   -webkit-box-shadow: 0px 16px 15px 4px #f1f1f1;
           box-shadow: 0px 16px 15px 4px #f1f1f1;
