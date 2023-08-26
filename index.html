@@ -120,7 +120,7 @@
             </svg>
         </div>
 
-        <button type="button" aria-label="open nav" class="header__toggle">
+        <button type="button" aria-label="open nav" class="header__toggle" data-togglenav>
             <svg width="48" height="32" viewBox="0 0 48 32" fill="none">
                 <path
                     d="M32.5497 16.4351H15.4503C15.2015 16.4351 15 16.2403 15 15.9998C15 15.7592 15.2015 15.5645 15.4503 15.5645H32.5497C32.7985 15.5645 33 15.7592 33 15.9998C33 16.2403 32.7985 16.4351 32.5497 16.4351Z"
@@ -542,7 +542,7 @@
     <!-- nav -->
 
     <nav class="nav">
-        <button type="button" aria-label="close nav" class="nav__toggle">
+        <button type="button" aria-label="close nav" class="nav__toggle" data-togglenav>
 
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="nav__toggle">
                 <path
@@ -670,7 +670,7 @@
             </defs>
         </svg>
     </nav>
-    <div class="nav__overlay"></div>
+    <div class="nav__overlay" data-togglenav></div>
 
     <script>
         if ('serviceWorker' in navigator) {

@@ -13,7 +13,19 @@
     ticking = false;
   // Constructor
   function Constructor() {
+    const LinkToggle = document.querySelectorAll("[data-togglenav]");
+
+    for (let e = 0; e < LinkToggle.length; e++) {
+      LinkToggle[e].addEventListener("click", NavToggle, false);
+    }
     window.addEventListener("scroll", onScroll);
+  }
+
+  function NavToggle() {
+    const Nav = document.querySelector(".nav");
+    const NavOverlay = document.querySelector(".nav__overlay");
+    Nav.classList.toggle("active");
+    NavOverlay.classList.toggle("active");
   }
 
   /**
