@@ -56,7 +56,7 @@ function minifyScripts() {
 function optimizeImages() {
   return gulp
     .src(paths.images.src)
-    .pipe(imagemin())
+    .pipe(imagemin([imagemin.mozjpeg({ quality: 100, progressive: true })]))
     .pipe(gulp.dest(paths.images.dest));
 }
 function optimizeFonts() {
