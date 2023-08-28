@@ -837,7 +837,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 50px;
-    margin: 30px 0 0;
+    margin: 30px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mod__about__figure {
     -webkit-box-flex: 0;
@@ -848,8 +851,9 @@ body {
     width: 260px;
   }
   .mod__about__text {
-    font: bold 24px/38px "Roboto", sans-serif;
+    font: 400 24px/31px "Roboto", sans-serif;
     max-width: 640px;
+    margin: 0;
   }
 }
 .work__li {
