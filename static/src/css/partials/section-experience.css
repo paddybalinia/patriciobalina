@@ -32,6 +32,9 @@
   display: block;
   margin: 0 0 10px;
 }
+.work-item__subtitle:hover {
+  text-decoration: underline;
+}
 .work-item__desc {
   font: 400 15px/19px "Roboto", sans-serif;
   margin: 0 0 19px;

@@ -41,6 +41,10 @@
         color: $color-terciary;
         display: block;
         margin: 0 0 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__desc {
