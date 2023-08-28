@@ -1,0 +1,45 @@
+@import '../vars.scss';
+
+.mod__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact {
+    &__subtitle {
+        font: 400 18px/19px $font-primary;
+    }
+
+    &__title {
+        font: 700 34px/36px $font-primary;
+        margin: -2px 0 0;
+    }
+
+    &__desc {
+        font: 400 16px/19px $font-primary;
+        margin: 23px 0 0;
+    }
+
+    &__link {
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .contact {
+        &__subtitle {
+            font: 400 30px/30px $font-primary;
+        }
+
+        &__title {
+            font: bold 41px/41px $font-primary;
+            margin: -6px 0 0;
+        }
+
+    }
+
+}

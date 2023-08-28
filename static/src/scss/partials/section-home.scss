@@ -1,0 +1,117 @@
+@import '../vars.scss';
+
+html,
+body {
+    height: 100%;
+
+}
+
+.home {
+    padding: 0 0 50px;
+
+    &__span {
+        display: block;
+
+        &-med {
+            font: 400 28px/33px $font-primary;
+        }
+
+        &-big {
+            font: bold 39px/42px $font-primary;
+        }
+
+        &-sma {
+            font: 400 24px/28px $font-primary;
+            color: $color-secondary;
+            margin: 12px 0 0;
+        }
+    }
+
+    &__desc {
+        font: 400 16px/22px $font-primary;
+        margin: 40px auto 70px;
+        max-width: 333px;
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 30px;
+        height: 50px;
+        width: 50px;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+            border-bottom: 4px solid white;
+            border-right: 4px solid white;
+            position: relative;
+            left: 16px;
+        }
+
+        &:before {
+            animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+
+        &:after {
+            animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+    }
+}
+
+@keyframes down-arrow-before {
+    50% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+}
+
+@keyframes down-arrow-after {
+    50% {
+        transform: rotate(45deg) translate(110%, 110%);
+        opacity: 0;
+    }
+
+    51% {
+        transform: rotate(45deg) translate(-130%, -130%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(-70%, -70%);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 760px) {
+
+    .home {
+        &__span {
+            &-med {
+                font: 400 41px/41px $font-primary;
+            }
+
+            &-big {
+                font: bold 53px/53px $font-primary;
+            }
+
+            &-sma {
+                font: 400 29px/29px $font-primary;
+
+            }
+        }
+
+        &__desc {
+            font: 400 16px/22px $font-primary;
+            margin: 40px auto 70px;
+            max-width: 604px;
+        }
+
+    }
+}

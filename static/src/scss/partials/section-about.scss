@@ -1,0 +1,57 @@
+@import '../vars.scss';
+
+.mod__about {
+
+    &__text {
+        font: 400 16px/22px $font-primary;
+        margin: 0 0 30px;
+    }
+
+    &__figure {
+        border-radius: 125px;
+        background: white;
+        position: relative;
+        overflow: hidden;
+        margin: 25px auto;
+        object-fit: cover;
+        height: 172px;
+        width: 172px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+    }
+
+    &__img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.skills {
+    &__ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .mod__about {
+        &__content {
+            display: flex;
+            gap: 50px;
+            margin: 30px 0 0;
+        }
+
+        &__figure {
+            flex: 0 0 260px;
+            margin: 0;
+            height: 260px;
+            width: 260px;
+        }
+
+        &__text {
+            font: bold 24px/38px $font-primary;
+            max-width: 640px;
+        }
+    }
+}

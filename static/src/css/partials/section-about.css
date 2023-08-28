@@ -1,0 +1,52 @@
+.mod__about__text {
+  font: 400 16px/22px "Roboto", sans-serif;
+  margin: 0 0 30px;
+}
+.mod__about__figure {
+  border-radius: 125px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  margin: 25px auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 172px;
+  width: 172px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+}
+.mod__about__img {
+  height: auto;
+  width: 100%;
+}
+
+.skills__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .mod__about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin: 30px 0 0;
+  }
+  .mod__about__figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 260px;
+            flex: 0 0 260px;
+    margin: 0;
+    height: 260px;
+    width: 260px;
+  }
+  .mod__about__text {
+    font: bold 24px/38px "Roboto", sans-serif;
+    max-width: 640px;
+  }
+}

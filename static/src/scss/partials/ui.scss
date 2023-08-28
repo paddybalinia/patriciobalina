@@ -1,0 +1,190 @@
+@import '../vars.scss';
+
+.row {
+    margin: 0 auto;
+    max-width: $grid-width;
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+}
+
+[data-lazyload] {
+    opacity: 0;
+}
+
+.mod {
+    &__header {
+
+        &__title {
+            font: 700 19px/22px $font-primary;
+            color: $color-terciary;
+            margin: 0 0 15px;
+
+            &::after {
+                content: '';
+                background: $color-terciary;
+                display: block;
+                height: 2px;
+                margin: 2px 0 0;
+                width: 35px;
+            }
+        }
+    }
+}
+
+.button {
+    padding: 12px 30px 10px;
+    background: $color-secondary;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 12px/12px $font-primary;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    margin: 0 auto;
+
+    &--secondary {
+        background: #000;
+    }
+}
+
+.button::after,
+.button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.button::after {
+    width: 25px;
+    height: 1px;
+    background: white;
+    transform: translateX(-3px);
+    margin-top: 0px;
+}
+
+.button::before {
+    content: "";
+    transform: rotate(-135deg) translateX(50%);
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: -1px;
+}
+
+.button:hover {
+    padding: 12px 50px 10px 10px;
+}
+
+.button:hover::after,
+.button:hover::before {
+    opacity: 1;
+    right: 14px;
+}
+
+.social {
+    &__ul {
+        display: flex;
+    }
+
+    &__a {
+        position: relative;
+        height: 40px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background: black;
+        color: white;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        transition: all 0.2s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            transition: all 0.2s ease;
+            border-radius: 50%;
+            opacity: 0;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255, .3);
+            transform: scale(0.8);
+        }
+
+        &:hover {
+            background: white;
+            color: black;
+
+            & svg {
+                fill: black;
+            }
+
+            &::after {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        &--secondary {
+            background: $color-secondary;
+
+            &:hover {
+                background: white;
+                color: white;
+
+                & svg {
+                    fill: $color-secondary;
+                }
+
+                &::after {
+                    transform: scale(1);
+                    opacity: 1;
+                    box-shadow: 0 0 0 1px rgb(255, 255, 255, .3);
+                }
+            }
+        }
+    }
+
+    &__svg {
+        fill: white;
+        height: auto;
+        width: 20px;
+        transition: all 0.2s ease;
+
+        &--tel {
+            width: 22px;
+        }
+
+        &--git {
+            width: 27px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mod {
+        &__header {
+            &__title {
+                font-size: 24px;
+
+                &:after {
+                    margin: 5px 0 0;
+                }
+            }
+        }
+    }
+}

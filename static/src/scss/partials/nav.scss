@@ -1,0 +1,81 @@
+@import '../vars.scss';
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    width: 100%;
+    max-width: 300px;
+    background: black;
+    padding: 22px 20px 0;
+    color: white;
+    transform: translate(110%, 0);
+    transition: transform 0.3s 0.1s;
+    z-index: 301;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    box-shadow: 0px 0px 10px 1px #0000004d;
+
+    &.active {
+        transform: translate(0, 0);
+    }
+
+    &__toggle {
+        width: 30px;
+        height: 30px;
+        margin: -6px -11px 0;
+        fill: $color-secondary;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            fill: white;
+        }
+    }
+
+    &__ul {
+        text-align: right;
+    }
+
+    &__social {
+        margin: 0 -11px 0 0;
+    }
+
+    &__li {
+        margin: 0 0 20px;
+    }
+
+    &__a {
+        font: 700 20px/24px $font-primary;
+        color: $color-secondary;
+    }
+
+    &__logo__svg {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+    }
+
+    &__overlay {
+        background-color: rgba($color-secondary, .7);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: inherit;
+            transition: all 0.2s ease-out;
+        }
+    }
+}
