@@ -30,18 +30,18 @@
 }
 .section--about {
   background: #f1f1f1;
-  padding: 25px 0 0;
+  padding: 25px 0;
   position: relative;
-  -webkit-box-shadow: 0px 16px 15px 4px #f1f1f1;
-          box-shadow: 0px 16px 15px 4px #f1f1f1;
+  -webkit-box-shadow: 0 6px 9px 1px #f1f1f1;
+          box-shadow: 0 6px 9px 1px #f1f1f1;
   z-index: 2;
 }
 .section--work {
-  padding: 42px 0 32px;
+  padding: 22px 0 32px;
 }
 .section--contact {
-  -webkit-box-shadow: 0 0 14px 20px #18fdf1;
-          box-shadow: 0 0 14px 20px #18fdf1;
+  -webkit-box-shadow: 0 0 14px 20px #00fff5;
+          box-shadow: 0 0 14px 20px #00fff5;
   padding: 20px 0 50px;
   background: linear-gradient(45deg, rgb(0, 171, 194) 0%, rgb(206, 253, 247) 27%, rgb(141, 246, 234) 40%, rgb(63, 238, 218) 56%, rgb(0, 184, 177) 100%);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(91, 55, 235, 0.5803921569)), color-stop(50%, #3feeda), to(#00fff5));
@@ -75,5 +75,12 @@
     height: 500px;
     -webkit-filter: blur(100px);
             filter: blur(100px);
+  }
+  .section--about {
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
+  }
+  .section--contact {
+    padding: 40px 0 50px;
   }
 }

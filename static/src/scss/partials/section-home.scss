@@ -87,3 +87,31 @@ body {
         opacity: 1;
     }
 }
+
+
+@media (min-width: 760px) {
+
+    .home {
+        &__span {
+            &-med {
+                font: 400 41px/41px $font-primary;
+            }
+
+            &-big {
+                font: bold 53px/53px $font-primary;
+            }
+
+            &-sma {
+                font: 400 29px/29px $font-primary;
+
+            }
+        }
+
+        &__desc {
+            font: 400 16px/22px $font-primary;
+            margin: 40px auto 70px;
+            max-width: 604px;
+        }
+
+    }
+}

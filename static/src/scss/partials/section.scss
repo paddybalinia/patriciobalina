@@ -28,18 +28,18 @@
 
     &--about {
         background: #f1f1f1;
-        padding: 25px 0 0;
+        padding: 25px 0;
         position: relative;
-        box-shadow: 0px 16px 15px 4px #f1f1f1;
+        box-shadow: 0 6px 9px 1px #f1f1f1;
         z-index: 2;
     }
 
     &--work {
-        padding: 42px 0 32px;
+        padding: 22px 0 32px;
     }
 
     &--contact {
-        box-shadow: 0 0 14px 20px #18fdf1;
+        box-shadow: 0 0 14px 20px #00fff5;
         padding: 20px 0 50px;
         background: linear-gradient(45deg, rgba(0, 171, 194, 1) 0%, rgba(206, 253, 247, 1) 27%, rgba(141, 246, 234, 1) 40%, rgba(63, 238, 218, 1) 56%, rgba(0, 184, 177, 1) 100%);
         background: linear-gradient(0deg, #5b37eb94 0, #3feeda 50%, #00fff5 100%);
@@ -63,5 +63,13 @@
         width: 500px;
         height: 500px;
         filter: blur(calc(500px / 5));
+    }
+
+    .section--about {
+        box-shadow: inherit;
+    }
+
+    .section--contact {
+        padding: 40px 0 50px;
     }
 }

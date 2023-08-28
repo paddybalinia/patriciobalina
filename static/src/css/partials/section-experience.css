@@ -23,12 +23,12 @@
 }
 .work-item__title {
   font: 400 20px/22px "Roboto", sans-serif;
-  color: #1CD3C1;
+  color: #9c27b0;
   margin: 0 0;
 }
 .work-item__subtitle {
   font: 700 20px/22px "Roboto", sans-serif;
-  color: #1CD3C1;
+  color: #9c27b0;
   display: block;
   margin: 0 0 10px;
 }
@@ -45,11 +45,38 @@
   gap: 10px;
 }
 .work-item__skill {
-  background: #1CD3C1;
+  background: #9c27b0;
   display: block;
   font: 700 13px/13px "Roboto", sans-serif;
   color: white;
   border-radius: 4px;
   text-transform: uppercase;
   padding: 7px 10px 6px;
+}
+
+@media (min-width: 768px) {
+  .work__ul {
+    max-width: 950px;
+    margin: 30px auto;
+  }
+  .work__li {
+    margin: 0;
+  }
+  .work__more {
+    padding: 30px 0 10px;
+  }
+  .work__more__text {
+    font: 700 30px/26px "Roboto", sans-serif;
+    max-width: 310px;
+  }
+  .work-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work-item__aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 210px;
+            flex: 0 0 210px;
+  }
 }

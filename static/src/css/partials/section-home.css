@@ -105,3 +105,19 @@ body {
     opacity: 1;
   }
 }
+@media (min-width: 760px) {
+  .home__span-med {
+    font: 400 41px/41px "Roboto", sans-serif;
+  }
+  .home__span-big {
+    font: bold 53px/53px "Roboto", sans-serif;
+  }
+  .home__span-sma {
+    font: 400 29px/29px "Roboto", sans-serif;
+  }
+  .home__desc {
+    font: 400 16px/22px "Roboto", sans-serif;
+    margin: 40px auto 70px;
+    max-width: 604px;
+  }
+}

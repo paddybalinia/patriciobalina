@@ -9,8 +9,6 @@
 }
 
 .contact {
-
-
     &__subtitle {
         font: 400 18px/19px $font-primary;
     }
@@ -28,8 +26,20 @@
     &__link {
         margin: 50px auto;
     }
+}
 
+@media (min-width: 768px) {
 
+    .contact {
+        &__subtitle {
+            font: 400 30px/30px $font-primary;
+        }
 
+        &__title {
+            font: bold 41px/41px $font-primary;
+            margin: -6px 0 0;
+        }
+
+    }
 
 }

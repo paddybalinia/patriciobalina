@@ -29,3 +29,13 @@
 .contact__link {
   margin: 50px auto;
 }
+
+@media (min-width: 768px) {
+  .contact__subtitle {
+    font: 400 30px/30px "Roboto", sans-serif;
+  }
+  .contact__title {
+    font: bold 41px/41px "Roboto", sans-serif;
+    margin: -6px 0 0;
+  }
+}

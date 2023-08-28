@@ -32,3 +32,26 @@
         gap: 15px;
     }
 }
+
+@media (min-width: 768px) {
+
+    .mod__about {
+        &__content {
+            display: flex;
+            gap: 50px;
+            margin: 30px 0 0;
+        }
+
+        &__figure {
+            flex: 0 0 260px;
+            margin: 0;
+            height: 260px;
+            width: 260px;
+        }
+
+        &__text {
+            font: bold 24px/38px $font-primary;
+            max-width: 640px;
+        }
+    }
+}

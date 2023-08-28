@@ -12,12 +12,12 @@
 
 .mod__header__title {
   font: 700 19px/22px "Roboto", sans-serif;
-  color: #1CD3C1;
+  color: #9c27b0;
   margin: 0 0 15px;
 }
 .mod__header__title::after {
   content: "";
-  background: #1CD3C1;
+  background: #9c27b0;
   display: block;
   height: 2px;
   margin: 2px 0 0;
@@ -146,18 +146,18 @@
   background: #1CD3C1;
 }
 .social__a--secondary:hover {
-  background: black;
+  background: white;
   color: white;
 }
 .social__a--secondary:hover svg {
-  fill: white;
+  fill: #1CD3C1;
 }
 .social__a--secondary:hover::after {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
 .social__svg {
   fill: white;
@@ -171,4 +171,13 @@
 }
 .social__svg--git {
   width: 27px;
+}
+
+@media (min-width: 768px) {
+  .mod__header__title {
+    font-size: 24px;
+  }
+  .mod__header__title:after {
+    margin: 5px 0 0;
+  }
 }

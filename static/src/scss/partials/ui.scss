@@ -17,12 +17,12 @@
 
         &__title {
             font: 700 19px/22px $font-primary;
-            color: $color-secondary;
+            color: $color-terciary;
             margin: 0 0 15px;
 
             &::after {
                 content: '';
-                background: $color-secondary;
+                background: $color-terciary;
                 display: block;
                 height: 2px;
                 margin: 2px 0 0;
@@ -143,17 +143,17 @@
             background: $color-secondary;
 
             &:hover {
-                background: black;
+                background: white;
                 color: white;
 
                 & svg {
-                    fill: white;
+                    fill: $color-secondary;
                 }
 
                 &::after {
                     transform: scale(1);
                     opacity: 1;
-                    box-shadow: 0 0 0 1px rgb(0, 0, 0, .3);
+                    box-shadow: 0 0 0 1px rgb(255, 255, 255, .3);
                 }
             }
         }
@@ -173,6 +173,18 @@
             width: 27px;
         }
     }
+}
 
+@media (min-width: 768px) {
+    .mod {
+        &__header {
+            &__title {
+                font-size: 24px;
 
+                &:after {
+                    margin: 5px 0 0;
+                }
+            }
+        }
+    }
 }

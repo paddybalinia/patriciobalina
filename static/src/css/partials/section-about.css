@@ -28,3 +28,25 @@
       flex-wrap: wrap;
   gap: 15px;
 }
+
+@media (min-width: 768px) {
+  .mod__about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin: 30px 0 0;
+  }
+  .mod__about__figure {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 260px;
+            flex: 0 0 260px;
+    margin: 0;
+    height: 260px;
+    width: 260px;
+  }
+  .mod__about__text {
+    font: bold 24px/38px "Roboto", sans-serif;
+    max-width: 640px;
+  }
+}
