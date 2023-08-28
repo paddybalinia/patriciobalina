@@ -1,0 +1,92 @@
+@media (min-width: 760px) {
+  .animation-left {
+    -webkit-transform: translate(-20%, 0);
+            transform: translate(-20%, 0);
+  }
+  .animation-top {
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  .animation-bottom {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+  .viewport-observer {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out 0.5s;
+    transition: all 0.2s ease-out 0.5s;
+  }
+  .viewport-observer.visible {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .delay-2 {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  .delay-1 {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .delay-2 {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .delay-3 {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .delay-4 {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .delay-5 {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  .delay-6 {
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+  }
+  .delay-7 {
+    -webkit-transition-delay: 0.7s;
+            transition-delay: 0.7s;
+  }
+  .delay-8 {
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
+  }
+  .delay-9 {
+    -webkit-transition-delay: 0.9s;
+            transition-delay: 0.9s;
+  }
+  .delay-10 {
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+  }
+  .delay-11 {
+    -webkit-transition-delay: 1.1s;
+            transition-delay: 1.1s;
+  }
+  .delay-12 {
+    -webkit-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+  }
+  .delay-13 {
+    -webkit-transition-delay: 1.3s;
+            transition-delay: 1.3s;
+  }
+  .delay-14 {
+    -webkit-transition-delay: 1.4s;
+            transition-delay: 1.4s;
+  }
+  .delay-15 {
+    -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+  }
+  .delay-16 {
+    -webkit-transition-delay: 1.6s;
+            transition-delay: 1.6s;
+  }
+}
