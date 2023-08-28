@@ -68,12 +68,13 @@
             top: -100%;
         }
 
-        &--sticky {
-            top: 0;
+        &__toggle {
+            top: 17px
         }
 
-        &__toggle {
-            display: none;
+
+        &--sticky {
+            top: 0;
         }
 
         &__nav__a {
@@ -113,7 +114,6 @@
         }
 
         &__right {
-            display: flex;
             align-items: center;
             justify-content: center;
             gap: 15px;
@@ -149,4 +149,20 @@
         }
     }
 
+}
+
+@media (min-width: 945px) {
+    .header {
+        &__toggle {
+            display: none;
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            top: 11px;
+        }
+    }
 }

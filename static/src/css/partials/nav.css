@@ -35,9 +35,9 @@
           transform: translate(0, 0);
 }
 .nav__toggle {
-  width: 40px;
-  height: 40px;
-  margin: -10px -11px 0;
+  width: 30px;
+  height: 30px;
+  margin: -6px -11px 0;
   fill: #1CD3C1;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -64,7 +64,7 @@
   right: 20px;
 }
 .nav__overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(28, 211, 193, 0.7);
   height: 100%;
   width: 100%;
   position: fixed;

@@ -62,11 +62,11 @@
   .header--beforesticky {
     top: -100%;
   }
+  .header__toggle {
+    top: 17px;
+  }
   .header--sticky {
     top: 0;
-  }
-  .header__toggle {
-    display: none;
   }
   .header__nav__a {
     font: bold 22px/22px "Roboto", sans-serif;
@@ -99,9 +99,6 @@
     height: 24px;
   }
   .header__right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -126,5 +123,23 @@
   .header--sticky .social__a:hover::after {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+}
+@media (min-width: 945px) {
+  .header__toggle {
+    display: none;
+  }
+  .header__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+    top: 11px;
   }
 }
