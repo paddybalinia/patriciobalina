@@ -1,0 +1,40 @@
+@import '../vars.scss';
+
+
+@media (min-width: 760px) {
+
+    .animation-left {
+        transform: translate(-20%, 0);
+    }
+
+    .animation-top {
+        transform: translate(0, -20%);
+    }
+
+    .animation-bottom {
+        transform: translate(0, 20%);
+    }
+
+    .viewport-observer {
+        opacity: 0;
+        transition: all 0.2s ease-out .5s;
+
+        &.visible {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    .delay-2 {
+        transition-delay: .5s;
+    }
+
+    @for $i from 1 to 17 {
+        .delay-#{$i} {
+            transition-delay: #{$i/10}s;
+        }
+    }
+
+
+
+}
