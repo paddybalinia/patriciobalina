@@ -116,8 +116,8 @@ body {
     font: 400 29px/29px "Roboto", sans-serif;
   }
   .home__desc {
-    font: 400 16px/22px "Roboto", sans-serif;
+    font: 400 19px/25px "Roboto", sans-serif;
     margin: 40px auto 70px;
-    max-width: 604px;
+    max-width: 714px;
   }
 }
