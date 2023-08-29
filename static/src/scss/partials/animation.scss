@@ -31,9 +31,10 @@
 
     @for $i from 1 to 17 {
         .delay-#{$i} {
-            transition-delay: #{$i/10}s;
+            transition-delay: $i * 0.1s;
         }
     }
+
 
 
 

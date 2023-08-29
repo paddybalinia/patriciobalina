@@ -31,6 +31,15 @@
         flex-wrap: wrap;
         gap: 15px;
     }
+
+    &__a {
+        transition: all 0.2s ease-out;
+
+        &:hover {
+
+            opacity: .7;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -51,9 +60,10 @@
         }
 
         &__text {
-            font: 400 24px/31px $font-primary;
+            font: 400 20px/30px $font-primary;
             max-width: 640px;
             margin: 0;
         }
+
     }
 }
