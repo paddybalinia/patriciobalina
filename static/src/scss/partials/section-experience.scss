@@ -42,10 +42,14 @@
         display: block;
         margin: 0 0 10px;
 
-        &:hover {
-            text-decoration: underline;
-        }
     }
+
+    & a:hover {
+        text-decoration: underline;
+
+    }
+
+
 
     &__desc {
         font: 400 15px/19px $font-primary;
