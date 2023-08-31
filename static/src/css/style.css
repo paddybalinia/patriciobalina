@@ -897,7 +897,7 @@ body {
   display: block;
   margin: 0 0 10px;
 }
-.work-item__subtitle:hover {
+.work-item a:hover {
   text-decoration: underline;
 }
 .work-item__desc {
