@@ -1,0 +1,69 @@
+@import '../vars.scss';
+
+.section--quote {
+    background: #fafafa;
+    margin: 0 0 -20px;
+}
+
+.mod__quote {
+    margin: 0;
+    padding: 40px 0 45px;
+    position: relative;
+
+    &__img {
+        height: 30px;
+        width: auto;
+        margin: 0 0 6px;
+    }
+
+    &__text {
+        color: $color-primary;
+        font: bold 24px/27px $font-primary;
+        margin: 0 0 15px;
+    }
+
+    &__name {
+        color: $color-primary;
+        display: block;
+        font: 400 14px/14px $font-primary;
+
+
+        &:before {
+            content: '';
+            background: $color-primary;
+            display: block;
+            height: 1px;
+            margin: 0 0 8px;
+            width: 40px;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .mod__quote {
+        margin: auto;
+        max-width: 860px;
+        padding: 80px 0 100px;
+
+        &__img {
+            position: absolute;
+            left: -60px;
+            height: 42px;
+        }
+
+        &__text {
+            font: bold 51px/54px $font-primary;
+            margin: 0 0 25px;
+        }
+
+        &__name {
+            font: 400 14px/14px $font-primary;
+
+            &:before {
+                margin: 0 0 15px;
+            }
+
+        }
+    }
+}
