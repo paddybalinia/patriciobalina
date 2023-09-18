@@ -177,6 +177,10 @@ input {
     -webkit-transition-delay: 1.6s;
             transition-delay: 1.6s;
   }
+  .delay-17 {
+    -webkit-transition-delay: 1.7s;
+            transition-delay: 1.7s;
+  }
 }
 .row {
   margin: 0 auto;
