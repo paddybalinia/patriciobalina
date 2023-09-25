@@ -1,11 +1,11 @@
-En
+All styles are modularized in the directory
 
 ```
 /partials/
 ```
 
-vamos a tener todos los scss modularizados, con variables que definimos en _/vars.sccs_ y que luego lo incluimos en un scss (ejemplo style.scss).
-Con gulp automatizamos el procceso de convertirlo en css y minificarlo en la carpeta
+We will have all the SCSS modularized, with variables that we define in /vars.sccs and then include in an SCSS (example style.scss).
+With gulp we automate the process of converting it to CSS and minifying it in the folder.
 
 ```
 /static/dist/css/
