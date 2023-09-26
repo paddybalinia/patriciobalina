@@ -18,10 +18,23 @@ html {
     overflow: hidden;
     font: $font-primary;
 
-    &__title {
-        max-width: 200px;
+    &__center {
         position: relative;
         z-index: 2;
+    }
+
+    &__title {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        margin: 0 0 30px;
+    }
+
+    &__svg {
+        height: auto;
+        width: 270px;
     }
 
     &__span {

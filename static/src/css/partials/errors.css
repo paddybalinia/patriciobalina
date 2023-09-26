@@ -22,10 +22,20 @@ html {
   overflow: hidden;
   font: "Roboto", sans-serif;
 }
-.error__title {
-  max-width: 200px;
+.error__center {
   position: relative;
   z-index: 2;
+}
+.error__title {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.error__img {
+  margin: 0 0 30px;
+}
+.error__svg {
+  height: auto;
+  width: 270px;
 }
 .error__span {
   display: block;
