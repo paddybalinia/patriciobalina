@@ -16,7 +16,7 @@
     &__header {
 
         &__title {
-            font: 700 22px/24px $font-primary;
+            font: 700 28px/30px $font-primary;
             color: $color-terciary;
             margin: 0 0 15px;
 
@@ -27,6 +27,15 @@
                 height: 2px;
                 margin: 2px 0 0;
                 width: 35px;
+            }
+
+            &.secondary {
+                color: $color-secondary;
+
+                &::after {
+                    content: '';
+                    background: $color-secondary;
+                }
             }
         }
     }
