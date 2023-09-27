@@ -921,11 +921,11 @@ body {
 .work-item__skill {
   background: #1CD3C1;
   display: block;
-  font: 700 14px/14px "Roboto", sans-serif;
+  font: 700 12px/12px "Roboto", sans-serif;
   color: black;
   border-radius: 4px;
   text-transform: uppercase;
-  padding: 8px 10px 5px;
+  padding: 7px 10px 5px;
   letter-spacing: 1px;
 }
 
