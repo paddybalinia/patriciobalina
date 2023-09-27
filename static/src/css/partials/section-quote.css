@@ -1,11 +1,11 @@
 .section--quote {
   background: #fafafa;
-  margin: 0 0 -20px;
+  margin: 0 0 -32px;
 }
 
 .mod__quote {
   margin: 0;
-  padding: 40px 0 45px;
+  padding: 40px 0 60px;
   position: relative;
 }
 .mod__quote__img {

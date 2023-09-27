@@ -11,7 +11,7 @@
 }
 
 .mod__header__title {
-  font: 700 22px/24px "Roboto", sans-serif;
+  font: 700 28px/30px "Roboto", sans-serif;
   color: #9c27b0;
   margin: 0 0 15px;
 }
@@ -22,6 +22,13 @@
   height: 2px;
   margin: 2px 0 0;
   width: 35px;
+}
+.mod__header__title.secondary {
+  color: #1CD3C1;
+}
+.mod__header__title.secondary::after {
+  content: "";
+  background: #1CD3C1;
 }
 
 .button {

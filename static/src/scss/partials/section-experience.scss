@@ -1,13 +1,14 @@
 @import '../vars.scss';
 
 .work {
+
     &__li {
-        padding: 10px 15px 20px;
+        padding: 10px 15px 30px;
         margin: 0 -15px;
 
         &+.work__li {
-            border-top: 1px solid #DDD;
-            padding: 20px 15px;
+            border-top: 1px solid rgba(255, 255, 255, .15);
+            padding: 30px 15px;
         }
     }
 
@@ -24,35 +25,42 @@
 }
 
 .work-item {
+
+    &__aside {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        display: flex;
+    }
+
     &__years {
-        font: 700 16px/19px $font-primary;
+        font: 700 21px/21px $font-primary;
         display: block;
-        margin: 0 0 5px;
+        margin: 0 0 13px;
     }
 
     &__title {
-        font: 400 20px/22px $font-primary;
-        color: $color-terciary;
-        margin: 0 0;
+        font: 400 27px/27px $font-primary;
+        color: $color-secondary;
+        margin: 0 0 15px;
+
+        &-block {
+            display: block;
+        }
     }
 
     &__subtitle {
-        font: 700 20px/22px $font-primary;
-        color: $color-terciary;
+        font: 700 21px/21px $font-primary;
+        color: $color-secondary;
         display: block;
-        margin: 0 0 10px;
-
+        margin: 0 0 16px;
     }
 
     & a:hover {
         text-decoration: underline;
-
     }
 
-
-
     &__desc {
-        font: 400 15px/19px $font-primary;
+        font: 400 16px/23px $font-primary;
         margin: 0 0 19px;
     }
 
@@ -63,25 +71,32 @@
     }
 
     &__skill {
-        background: $color-terciary;
+        background: $color-secondary;
         display: block;
-        font: 700 13px/13px $font-primary;
-        color: white;
+        font: 700 14px/14px $font-primary;
+        color: black;
         border-radius: 4px;
         text-transform: uppercase;
-        padding: 7px 10px 6px;
+        padding: 8px 10px 5px;
+        letter-spacing: 1px;
     }
 }
 
 @media (min-width: 768px) {
     .work {
         &__ul {
-            max-width: 950px;
             margin: 30px auto;
         }
 
         &__li {
             margin: 0;
+            padding-left: 0;
+            padding-right: 0;
+
+            &+.work__li {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
 
         &__more {
@@ -98,7 +113,16 @@
         display: flex;
 
         &__aside {
-            flex: 0 0 210px
+            flex: 0 0 40%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__years {
+
+            margin: 0 70px 0 0;
         }
     }
 }

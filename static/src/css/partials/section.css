@@ -32,11 +32,13 @@
   background: #f1f1f1;
   padding: 25px 0;
   position: relative;
-  -webkit-box-shadow: 0 6px 9px 1px #f1f1f1;
-          box-shadow: 0 6px 9px 1px #f1f1f1;
   z-index: 2;
 }
 .section--work {
+  background: #1A1A1A;
+  color: white;
+  position: relative;
+  overflow: hidden;
   padding: 22px 0 32px;
 }
 .section--contact {
