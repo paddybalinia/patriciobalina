@@ -853,6 +853,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .mod__skills {
+    margin: 15px 0;
+  }
   .mod__about__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1027,7 +1030,7 @@ body {
 
 .mod__quote {
   margin: 0;
-  padding: 40px 0 60px;
+  padding: 40px 0;
   position: relative;
 }
 .mod__quote__img {
