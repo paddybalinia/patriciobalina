@@ -45,6 +45,10 @@
 
 @media (min-width: 768px) {
 
+    .mod__skills {
+        margin: 15px 0;
+    }
+
     .mod__about {
         &__content {
             display: grid;
