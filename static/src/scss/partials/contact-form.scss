@@ -1,0 +1,26 @@
+@import '../vars.scss';
+
+.contact {
+    background: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+
+
+    &__form {
+        flex-direction: column;
+        display: flex;
+        gap: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+
+
+@media (min-width: 768px) {}
