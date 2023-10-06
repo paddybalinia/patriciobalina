@@ -81,29 +81,7 @@
 
         gtag('config', 'G-10DM779VVX');
     </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('YOUR_PUBLIC_KEY');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+
 </head>
 
 <body>
@@ -249,7 +227,7 @@
     <section id="contact" class="contact">
         <div class="row">
             <div class="contact__center">
-                <form id="contact-form" class="contact__form">
+                <!-- <form id="contact-form" class="contact__form">
                     <input type="hidden" name="contact_number">
                     <label>Name</label>
                     <input type="text" name="user_name">
@@ -258,10 +236,34 @@
                     <label>Message</label>
                     <textarea name="message"></textarea>
                     <input type="submit" value="Send">
+                </form> -->
+
+                <form id="form" class="contact__form">
+                    <div class="field">
+                        <label for="from_firstname">from_firstname</label>
+                        <input type="text" name="from_firstname" id="from_firstname">
+                    </div>
+                    <div class="field">
+                        <label for="from_lastname">from_lastname</label>
+                        <input type="text" name="from_lastname" id="from_lastname">
+                    </div>
+                    <div class="field">
+                        <label for="from_email">from_email</label>
+                        <input type="text" name="from_email" id="from_email">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">message</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+
+
+                    <input type="submit" id="button" value="Send Email">
                 </form>
             </div>
         </div>
     </section>
+
 
     <!-- nav -->
 
@@ -391,6 +393,7 @@
     </nav>
     <div class="nav__overlay" data-togglenav></div>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js')
@@ -401,6 +404,30 @@
                     console.log('Error al registrar el Service Worker:', error);
                 });
         }
+    </script>
+    <script type="text/javascript">
+        emailjs.init('SM5NeiavHxv2s3Vgt')
+
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'service_1p7myvm';
+                const templateID = 'form_contacto_web';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
     </script>
 
 
