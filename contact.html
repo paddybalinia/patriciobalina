@@ -227,39 +227,42 @@
     <section id="contact" class="contact">
         <div class="row">
             <div class="contact__center">
-                <!-- <form id="contact-form" class="contact__form">
-                    <input type="hidden" name="contact_number">
-                    <label>Name</label>
-                    <input type="text" name="user_name">
-                    <label>Email</label>
-                    <input type="email" name="user_email">
-                    <label>Message</label>
-                    <textarea name="message"></textarea>
-                    <input type="submit" value="Send">
-                </form> -->
+
+                <h2 class="contact__title">Contact Us</h2>
+
+                <p class="contact__descc">How can I help you? Fill in the form, or write me to <a
+                        href="mailto:paddybalinia@gmail.com" title="paddybalinia@gmail.com">paddybalinia@gmail.com</a>
+                </p>
 
                 <form id="form" class="contact__form">
                     <div class="field">
-                        <label for="from_firstname">from_firstname</label>
-                        <input type="text" name="from_firstname" id="from_firstname">
+                        <input type="text" name="from_firstname" id="from_firstname" placeholder="First Name">
                     </div>
                     <div class="field">
-                        <label for="from_lastname">from_lastname</label>
-                        <input type="text" name="from_lastname" id="from_lastname">
+                        <input type="text" name="from_lastname" id="from_lastname" placeholder="Last Name">
                     </div>
                     <div class="field">
-                        <label for="from_email">from_email</label>
-                        <input type="text" name="from_email" id="from_email">
+                        <input type="text" name="from_email" id="from_email" placeholder="Email">
                     </div>
 
                     <div class="field">
-                        <label for="message">message</label>
-                        <input type="text" name="message" id="message">
+                        <input type="text" name="message" id="message"
+                            placeholder="Tell me briefly about your project.">
                     </div>
-
-
-                    <input type="submit" id="button" value="Send Email">
+                    <input type="submit" id="button" value="Submit">
                 </form>
+
+                <div class="contact__succces">
+                    <h3 class="contact__message__title">Thank you for contacting me. </h3>
+                    <p class="contact__message__text">I will read your message and respond as soon as possible.</p>
+                </div>
+
+                <div class="contact__error">
+                    <h3 class="contact__message__title">There was an error. </h3>
+                    <p class="contact__message__text">Please try again, and if the problem persists, please try again
+                        later.</p>
+                </div>
+
             </div>
         </div>
     </section>
