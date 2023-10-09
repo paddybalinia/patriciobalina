@@ -228,36 +228,39 @@
         <div class="row">
             <div class="contact__center">
 
-                <h2 class="contact__title">Contact Us</h2>
+                <h2 class="contact__title">Contact us</h2>
 
-                <p class="contact__descc">How can I help you? Fill in the form, or write me to <a
+                <p class="contact__desc">How can I help you? Fill in the form, or write me to <a
                         href="mailto:paddybalinia@gmail.com" title="paddybalinia@gmail.com">paddybalinia@gmail.com</a>
                 </p>
 
                 <form id="form" class="contact__form">
                     <div class="field">
-                        <input type="text" name="from_firstname" id="from_firstname" placeholder="First Name">
+                        <input class="contact__input" type="text" name="from_firstname" id="from_firstname"
+                            placeholder="First Name">
                     </div>
                     <div class="field">
-                        <input type="text" name="from_lastname" id="from_lastname" placeholder="Last Name">
+                        <input class="contact__input" type="text" name="from_lastname" id="from_lastname"
+                            placeholder="Last Name">
                     </div>
                     <div class="field">
-                        <input type="text" name="from_email" id="from_email" placeholder="Email">
+                        <input class="contact__input" type="text" name="from_email" id="from_email" placeholder="Email">
                     </div>
 
                     <div class="field">
-                        <input type="text" name="message" id="message"
-                            placeholder="Tell me briefly about your project.">
+
+                        <textarea class="contact__input contact__textarea" name="message" id="message"
+                            placeholder="Tell me briefly about your project."></textarea>
                     </div>
-                    <input type="submit" id="button" value="Submit">
+                    <input class="contact__submit " type="submit" id="button" value="Submit">
                 </form>
 
-                <div class="contact__succces">
+                <div class="contact__message hide contact__succces">
                     <h3 class="contact__message__title">Thank you for contacting me. </h3>
                     <p class="contact__message__text">I will read your message and respond as soon as possible.</p>
                 </div>
 
-                <div class="contact__error">
+                <div class="contact__message hide contact__error">
                     <h3 class="contact__message__title">There was an error. </h3>
                     <p class="contact__message__text">Please try again, and if the problem persists, please try again
                         later.</p>
