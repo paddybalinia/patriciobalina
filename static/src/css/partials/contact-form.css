@@ -1,5 +1,38 @@
+.hide {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
 .contact {
-  background: black;
+  background: #1A1A1A;
   color: white;
   height: 100vh;
   display: -webkit-box;
@@ -11,8 +44,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  text-align: left;
   width: 100vw;
+}
+.contact__center {
+  margin: 0 auto;
+  max-width: 500px;
 }
 .contact__form {
   -webkit-box-orient: vertical;
@@ -26,4 +63,66 @@
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
+}
+.contact__title {
+  font: 400 20px/20px "Roboto", sans-serif;
+  color: #1CD3C1;
+  margin: 0 0 15px;
+  display: inline-block;
+  position: relative;
+}
+.contact__title::after {
+  content: "";
+  background: #1CD3C1;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  width: 20px;
+}
+.contact__desc {
+  font: 400 16px/22px Roboto, sans-serif;
+  margin: 0 auto 20px;
+}
+.contact__desc a {
+  color: #9c27b0;
+  text-decoration: underline;
+}
+.contact__desc a:hover {
+  text-decoration: none;
+}
+.contact__message__title {
+  font: 700 20px/20px "Roboto", sans-serif;
+  margin: 40px 0 10px;
+}
+.contact__input {
+  background: #222222;
+  border: 0;
+  border-bottom: 1px solid white;
+  font: 400 16px/18px "Roboto", sans-serif;
+  color: white;
+  padding: 10px 15px;
+  width: 100%;
+}
+.contact__textarea {
+  font: 400 16px/18px "Roboto", sans-serif;
+  min-height: 200px;
+  background: #222222;
+  border: 0;
+  resize: none;
+  border-bottom: 1px solid white;
+}
+.contact__submit {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 12px 30px 10px;
+  background: #1CD3C1;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font: 700 12px/12px Roboto, sans-serif;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
 }
