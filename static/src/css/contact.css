@@ -690,7 +690,7 @@ input {
   width: 20px;
 }
 .contact__desc {
-  font: 400 16px/22px Roboto, sans-serif;
+  font: 400 16px/22px "Roboto", sans-serif;
   margin: 0 auto 20px;
 }
 .contact__desc a {
@@ -729,8 +729,14 @@ input {
   border: 0;
   color: #fff;
   text-transform: uppercase;
-  font: 700 12px/12px Roboto, sans-serif;
+  font: 700 12px/12px "Roboto", sans-serif;
   letter-spacing: 3px;
   position: relative;
   display: inline-block;
+}
+.contact__submit:focus {
+  font: 700 12px/12px "Roboto", sans-serif;
+}
+.contact .field__error .contact__input {
+  border-color: #a90000;
 }

@@ -234,27 +234,27 @@
                         href="mailto:paddybalinia@gmail.com" title="paddybalinia@gmail.com">paddybalinia@gmail.com</a>
                 </p>
 
-                <form id="form" class="contact__form">
-                    <div class="field">
+                <form id="form" class="contact__form" data-formbox>
+                    <div class="form__field">
                         <input class="contact__input" type="text" name="from_firstname" id="from_firstname"
                             placeholder="First Name">
                     </div>
-                    <div class="field">
+                    <div class="form__field">
                         <input class="contact__input" type="text" name="from_lastname" id="from_lastname"
                             placeholder="Last Name">
                     </div>
-                    <div class="field">
+                    <div class="form__field">
                         <input class="contact__input" type="text" name="from_email" id="from_email" placeholder="Email">
                     </div>
 
-                    <div class="field">
+                    <div class="form__field">
 
-                        <textarea class="contact__input contact__textarea" name="message" id="message"
+                        <textarea class="contact__input contact__textarea" name="from_message" id="from_message"
                             placeholder="Tell me briefly about your project."></textarea>
                     </div>
-                    <input class="contact__submit " type="submit" id="button" value="Submit">
+                    <input class="contact__submit" type="submit" id="button" value="Submit">
+                    <div class="form--box__error"></div>
                 </form>
-
                 <div class="contact__message hide contact__succces">
                     <h3 class="contact__message__title">Thank you for contacting me. </h3>
                     <p class="contact__message__text">I will read your message and respond as soon as possible.</p>
@@ -262,7 +262,8 @@
 
                 <div class="contact__message hide contact__error">
                     <h3 class="contact__message__title">There was an error. </h3>
-                    <p class="contact__message__text">Please try again, and if the problem persists, please try again
+                    <p class="contact__message__text">Please try again, and if the problem persists, please try
+                        again
                         later.</p>
                 </div>
 
@@ -411,32 +412,9 @@
                 });
         }
     </script>
-    <script type="text/javascript">
-        emailjs.init('SM5NeiavHxv2s3Vgt')
-
-        const btn = document.getElementById('button');
-
-        document.getElementById('form')
-            .addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                btn.value = 'Sending...';
-
-                const serviceID = 'service_1p7myvm';
-                const templateID = 'form_contacto_web';
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        btn.value = 'Send Email';
-                        alert('Sent!');
-                    }, (err) => {
-                        btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
-                    });
-            });
-    </script>
 
 
+    <script async src="static/dist/js/Contact-min.js"></script>
 
 </body>
 
