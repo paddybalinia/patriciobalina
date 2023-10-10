@@ -58,7 +58,7 @@
     }
 
     &__desc {
-        font: 400 16px/22px Roboto, sans-serif;
+        font: 400 16px/22px $font-primary;
         margin: 0 auto 20px;
 
         a {
@@ -98,17 +98,26 @@
     }
 
     &__submit {
-
         box-shadow: none;
         padding: 12px 30px 10px;
         background: #1CD3C1;
         border: 0;
         color: #fff;
         text-transform: uppercase;
-        font: 700 12px/12px Roboto, sans-serif;
+        font: 700 12px/12px $font-primary;
         letter-spacing: 3px;
         position: relative;
         display: inline-block;
+
+        &:focus {
+            font: 700 12px/12px $font-primary;
+        }
+    }
+
+    .field__error {
+        .contact__input {
+            border-color: #a90000;
+        }
     }
 }
 
