@@ -59,6 +59,7 @@ function optimizeImages() {
     .pipe(imagemin([imagemin.mozjpeg({ quality: 100, progressive: true })]))
     .pipe(gulp.dest(paths.images.dest));
 }
+
 function optimizeFonts() {
   return gulp
     .src(paths.fonts.src)
@@ -73,10 +74,19 @@ const jsFiles = [
   "static/src/js/partials/ViewportObserver.js",
 ];
 
+const contactJsFiles = ["static/src/js/partials/ContactForm.js"];
+
 function combineScripts() {
   return gulp
-    .src(jsFiles)
+    .src([...jsFiles]) // Combina jsFiles y contactJsFiles
     .pipe(concat("Home.js"))
+    .pipe(gulp.dest("static/src/js"));
+}
+
+function combineContactScript() {
+  return gulp
+    .src(contactJsFiles)
+    .pipe(concat("Contact.js"))
     .pipe(gulp.dest("static/src/js"));
 }
 
@@ -95,7 +105,8 @@ const buildTasks = gulp.parallel(
   minifyScripts,
   optimizeImages,
   combineScripts,
-  optimizeFonts
+  optimizeFonts,
+  combineContactScript // Agrega la tarea de combinación del script de contacto
 );
 
 exports.build = buildTasks;
