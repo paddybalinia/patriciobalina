@@ -71,7 +71,7 @@
 
     <link rel="stylesheet" href="static/dist/css/contact.min.css" media="all">
 
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-10DM779VVX"></script>
     <script>
@@ -235,6 +235,9 @@
                 </p>
 
                 <form id="form" class="contact__form" data-formbox>
+
+                    <div class="g-recaptcha" data-sitekey="6Ldv-JEoAAAAAJ89GrT2OAlg5il1u1UZSTl8ES1W"></div>
+
                     <div class="form__field">
                         <input class="contact__input" type="text" name="from_firstname" id="from_firstname"
                             placeholder="First Name">
