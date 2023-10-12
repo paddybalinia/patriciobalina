@@ -740,3 +740,13 @@ input {
 .contact .field__error .contact__input {
   border-color: #a90000;
 }
+
+@media (max-height: 750px) {
+  .contact {
+    min-height: 100vh;
+    height: auto;
+  }
+  .contact__center {
+    padding: 70px 0 20px;
+  }
+}
