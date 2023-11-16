@@ -73,7 +73,6 @@
   //Events
   function onSubmit() {
     event.preventDefault();
-    //alert("onSubmit");
     resetFormErrors();
 
     inputFirstName.value = inputFirstName.value.replaceAll("http://", "");
@@ -125,11 +124,11 @@
       emailjs.sendForm(serviceID, templateID, this).then(
         () => {
           btn.value = "Send Email";
-          alert("Sent!");
+          // alert("Sent!");
         },
         (err) => {
           btn.value = "Send Email";
-          alert(JSON.stringify(err));
+          // alert(JSON.stringify(err));
         }
       );
       showSuccess();
