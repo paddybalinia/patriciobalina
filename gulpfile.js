@@ -72,6 +72,7 @@ const jsFiles = [
   "static/src/js/partials/LazyLoadImg.js",
   "static/src/js/partials/ScrollIntoView.js",
   "static/src/js/partials/ViewportObserver.js",
+  "static/src/js/partials/TyperText.js",
 ];
 
 const contactJsFiles = ["static/src/js/partials/ContactForm.js"];
