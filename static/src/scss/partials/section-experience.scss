@@ -24,6 +24,15 @@
     }
 }
 
+.work__line {
+    background: #1CD3C1;
+    height: 0;
+    display: none;
+    position: absolute;
+    width: 1px;
+    margin: 30px 0 0 79px;
+}
+
 .work-item {
 
     &__aside {
@@ -33,9 +42,13 @@
     }
 
     &__years {
-        font: 700 21px/21px $font-primary;
+        font: 700 29px/29px $font-primary;
         display: block;
         margin: 0 0 13px;
+    }
+
+    &__bg {
+        background: #1a1a1a;
     }
 
     &__title {
@@ -109,11 +122,15 @@
         }
     }
 
+    .work__line {
+        display: block;
+    }
+
     .work-item {
         display: flex;
 
         &__aside {
-            flex: 0 0 40%;
+            flex: 0 0 22%;
             flex-direction: row;
             flex-wrap: nowrap;
             display: flex;
@@ -122,7 +139,7 @@
 
         &__years {
 
-            margin: 0 70px 0 0;
+            margin: 0 0 0;
         }
     }
 }

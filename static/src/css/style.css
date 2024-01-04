@@ -880,6 +880,15 @@ body {
   max-width: 210px;
 }
 
+.work__line {
+  background: #1CD3C1;
+  height: 0;
+  display: none;
+  position: absolute;
+  width: 1px;
+  margin: 30px 0 0 79px;
+}
+
 .work-item__aside {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
@@ -892,9 +901,12 @@ body {
   display: flex;
 }
 .work-item__years {
-  font: 700 21px/21px "Roboto", sans-serif;
+  font: 700 29px/29px "Roboto", sans-serif;
   display: block;
   margin: 0 0 13px;
+}
+.work-item__bg {
+  background: #1a1a1a;
 }
 .work-item__title {
   font: 400 27px/27px "Roboto", sans-serif;
@@ -956,6 +968,9 @@ body {
     font: 700 30px/26px "Roboto", sans-serif;
     max-width: 310px;
   }
+  .work__line {
+    display: block;
+  }
   .work-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -963,8 +978,8 @@ body {
   }
   .work-item__aside {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -979,7 +994,7 @@ body {
             justify-content: space-between;
   }
   .work-item__years {
-    margin: 0 70px 0 0;
+    margin: 0 0 0;
   }
 }
 .mod__contact {
