@@ -72,6 +72,7 @@ const jsFiles = [
   "static/src/js/partials/LazyLoadImg.js",
   "static/src/js/partials/ScrollIntoView.js",
   "static/src/js/partials/ViewportObserver.js",
+  "static/src/js/partials/LineExperience.js",
   "static/src/js/partials/TyperText.js",
 ];
 
