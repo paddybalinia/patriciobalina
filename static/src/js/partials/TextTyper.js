@@ -5,15 +5,6 @@
   const textoElemento = document.getElementById("texto");
   const texto = "Texto que se está escribiendo por sí solo.";
 
-  // Constructor
-  function Constructor() {
-    // const textoElemento = document.getElementById("texto");
-    // const LinkAnchor = document.querySelectorAll("[data-anchor]");
-    // for (let e = 0; e < LinkAnchor.length; e++) {
-    //   LinkAnchor[e].addEventListener("click", ViewportObserver, false);
-    // }
-  }
-
   function escribirTexto() {
     let i = 0;
     function escribirCaracter() {
@@ -38,6 +29,4 @@
 
   // Observar el elemento
   observer.observe(textoElemento);
-  // Export
-  window.ScrollIntoView = Constructor();
 })();
