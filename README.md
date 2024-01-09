@@ -40,8 +40,3 @@ npm run watch
 ``` 
 gulp watch
 ```
-
-#####  Build
-``` 
-npm run build 
-```
