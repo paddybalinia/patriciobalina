@@ -7,7 +7,6 @@
         margin: 0 -15px;
 
         &+.work__li {
-            border-top: 1px solid rgba(255, 255, 255, .15);
             padding: 30px 15px;
         }
     }
@@ -25,7 +24,8 @@
 }
 
 .work__line {
-    background: #1CD3C1;
+    background: rgba(255, 255, 255, .15);
+
     height: 0;
     display: none;
     position: absolute;
