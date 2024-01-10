@@ -906,6 +906,7 @@ body {
 }
 .work-item__bg {
   background: #1a1a1a;
+  padding: 10px 0;
 }
 .work-item__title {
   font: 400 27px/27px "Roboto", sans-serif;
