@@ -42,7 +42,15 @@
 }
 .work-item__bg {
   background: #1a1a1a;
+  color: white;
   padding: 10px 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0.46;
+}
+.work-item .mitad-viewport {
+  color: white;
+  opacity: 1;
 }
 .work-item__title {
   font: 400 27px/27px "Roboto", sans-serif;

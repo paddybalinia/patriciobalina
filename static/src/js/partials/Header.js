@@ -2,6 +2,8 @@
   "use strict";
 
   var Header = document.querySelector(".header"),
+    ButtonScrollUp = document.querySelector(".scroll-up"),
+    viewportHeight = window.innerHeight,
     lastScrollY =
       window.scrollY ||
       window.pageYOffset ||
@@ -67,6 +69,10 @@
     );
     Header.classList[lastScrollY >= startSticky ? "add" : "remove"](
       "header--sticky"
+    );
+
+    ButtonScrollUp.classList[lastScrollY >= viewportHeight ? "add" : "remove"](
+      "visible"
     );
 
     menuLinks.forEach((link) => {
