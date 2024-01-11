@@ -368,6 +368,62 @@ input {
   width: 27px;
 }
 
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: #1dd3c1;
+  border-radius: 125px;
+  padding: 1px;
+  height: 40px;
+  width: 40px;
+  font-size: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.scroll-up::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 0 1px rgba(29, 211, 193, 0.3);
+          box-shadow: 0 0 0 1px rgba(29, 211, 193, 0.3);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.scroll-up:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.scroll-up.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.scroll-up::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  position: relative;
+  left: 11px;
+  top: 3px;
+}
+
 @media (min-width: 768px) {
   .mod__header__title {
     font-size: 22px;
@@ -906,7 +962,15 @@ body {
 }
 .work-item__bg {
   background: #1a1a1a;
+  color: white;
   padding: 10px 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0.46;
+}
+.work-item .mitad-viewport {
+  color: white;
+  opacity: 1;
 }
 .work-item__title {
   font: 400 27px/27px "Roboto", sans-serif;

@@ -1,6 +1,30 @@
 (function (window, document) {
   // Función que se ejecuta cuando se realiza un scroll en la página
+
+  function verificarPosicion() {
+    // Obtener la mitad de la altura del viewport
+    const mitadViewport = window.innerHeight / 2;
+
+    const spanYear = document.querySelectorAll(".work-item__bg");
+
+    for (let e = 0; e < spanYear.length; e++) {
+      verificarElemento(spanYear[e], mitadViewport);
+    }
+  }
+  // Función para verificar posición y agregar clase
+  function verificarElemento(elemento, mitadViewport) {
+    const rect = elemento.getBoundingClientRect();
+    const elementoEnLaMitad = rect.top < mitadViewport;
+
+    if (elementoEnLaMitad) {
+      elemento.classList.add("mitad-viewport");
+    } else {
+      elemento.classList.remove("mitad-viewport");
+    }
+  }
+
   window.addEventListener("scroll", function () {
+    verificarPosicion();
     // Obtener el ancho del viewport
     var anchoViewport = window.innerWidth;
 
