@@ -1,9 +1,9 @@
 .work__li {
-  padding: 10px 15px 30px;
+  padding: 10px 15px 30px 35px;
   margin: 0 -15px;
 }
 .work__li + .work__li {
-  padding: 30px 15px;
+  padding: 30px 15px 30px 35px;
 }
 .work__more {
   text-align: center;
@@ -18,10 +18,9 @@
 .work__line {
   background: rgba(255, 255, 255, 0.15);
   height: 0;
-  display: none;
   position: absolute;
   width: 2px;
-  margin: 30px 0 0 79px;
+  margin: 30px 0 0 0;
 }
 
 .work-item__aside {
@@ -47,10 +46,28 @@
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   opacity: 0.46;
+  position: relative;
+}
+.work-item__bg:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: white;
+  opacity: 0.46;
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 15px;
+  border-radius: 125px;
+  border: 8px solid #1a1a1a;
 }
 .work-item .mitad-viewport {
   color: white;
   opacity: 1;
+}
+.work-item .mitad-viewport:before {
+  opacity: 1;
+  background: white;
 }
 .work-item__title {
   font: 400 27px/27px "Roboto", sans-serif;
@@ -114,6 +131,7 @@
   }
   .work__line {
     display: block;
+    margin: 30px 0 0 79px;
   }
   .work-item {
     display: -webkit-box;
@@ -136,6 +154,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .work-item__bg:before {
+    display: none;
   }
   .work-item__years {
     margin: 0 0 0;
