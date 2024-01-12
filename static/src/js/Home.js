@@ -215,7 +215,6 @@
 
 (function (window, document) {
   // Función que se ejecuta cuando se realiza un scroll en la página
-
   function verificarPosicion() {
     // Obtener la mitad de la altura del viewport
     const mitadViewport = window.innerHeight / 2;
@@ -226,6 +225,7 @@
       verificarElemento(spanYear[e], mitadViewport);
     }
   }
+
   // Función para verificar posición y agregar clase
   function verificarElemento(elemento, mitadViewport) {
     const rect = elemento.getBoundingClientRect();
@@ -240,13 +240,6 @@
 
   window.addEventListener("scroll", function () {
     verificarPosicion();
-    // Obtener el ancho del viewport
-    var anchoViewport = window.innerWidth;
-
-    // Si el ancho del viewport es menor a 768 pixels, no realizar ninguna acción
-    if (anchoViewport < 768) {
-      return;
-    }
 
     // Obtener referencias a los elementos necesarios
     var elemento = document.getElementById("linea");
@@ -280,7 +273,11 @@
       scrollPosY < scrollStop - viewportHeight / 2
     ) {
       // Aplicar la nueva altura al estilo del elemento
-      linea.style.height = nuevaAltura + "px";
+      var anchoViewport = window.innerWidth;
+      if (anchoViewport < 768) {
+        nuevaAltura = nuevaAltura - viewportHeight / 2;
+      }
+      elemento.style.height = nuevaAltura + "px";
     }
   });
 })(window, document);
