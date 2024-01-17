@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ⚡ lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="canonical" href="https://patriciobalina.com.ar/">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+
 
     <style amp-boilerplate>
         body {
@@ -78,6 +81,1229 @@
     <!-- Include the AMP CSS -->
     <style amp-custom>
         /* Your custom styles go here */
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: rgb(0, 0, 1);
+            font: 1rem/1.1 "Roboto", sans-serif;
+            margin: 0;
+            padding-top: 0;
+        }
+
+        a {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+
+        figure,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+            text-indent: -9999px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            outline: 0;
+            padding: 0;
+        }
+
+        input:focus,
+        input {
+            font-size: 16px;
+        }
+
+        *:focus {
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            src: url("static/dist/fonts/roboto-400.woff2") format("woff2");
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            src: url("static/dist/fonts/roboto-700.woff2") format("woff2");
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        .row {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 15px;
+            position: relative;
+            width: 100%;
+        }
+
+        [data-lazyload] {
+            opacity: 0;
+        }
+
+        .mod__header__title {
+            font: 400 20px/20px "Roboto", sans-serif;
+            color: #9c27b0;
+            margin: 0 0 15px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .mod__header__title::after {
+            content: "";
+            background: #9c27b0;
+            display: block;
+            height: 2px;
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            width: 20px;
+        }
+
+        .mod__header__title.secondary {
+            color: #1CD3C1;
+        }
+
+        .mod__header__title.secondary::after {
+            content: "";
+            background: #1CD3C1;
+        }
+
+        .button {
+            padding: 12px 30px 10px;
+            background: #1CD3C1;
+            border: 0;
+            color: #fff;
+            text-transform: uppercase;
+            font: bold 12px/12px "Roboto", sans-serif;
+            letter-spacing: 3px;
+            position: relative;
+            display: inline-block;
+            -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        .button--secondary {
+            background: #000;
+        }
+
+        .button::after,
+        .button::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            opacity: 0;
+            -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        .button::after {
+            width: 25px;
+            height: 1px;
+            background: white;
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+            margin-top: 0px;
+        }
+
+        .button::before {
+            content: "";
+            -webkit-transform: rotate(-135deg) translateX(50%);
+            transform: rotate(-135deg) translateX(50%);
+            width: 11px;
+            height: 11px;
+            background: transparent;
+            border-left: 1px solid white;
+            border-bottom: 1px solid white;
+            margin-top: -1px;
+        }
+
+        .button:hover {
+            padding: 12px 50px 10px 10px;
+        }
+
+        .button:hover::after,
+        .button:hover::before {
+            opacity: 1;
+            right: 14px;
+        }
+
+        .social__ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .social__a {
+            position: relative;
+            height: 40px;
+            margin: 0 10px;
+            border-radius: 50%;
+            background: black;
+            color: white;
+            line-height: 40px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 40px;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        .social__a::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            border-radius: 50%;
+            opacity: 0;
+            -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+
+        .social__a:hover {
+            background: white;
+            color: black;
+        }
+
+        .social__a:hover svg {
+            fill: black;
+        }
+
+        .social__a:hover::after {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .social__a--secondary {
+            background: #1CD3C1;
+        }
+
+        .social__a--secondary:hover {
+            background: white;
+            color: white;
+        }
+
+        .social__a--secondary:hover svg {
+            fill: #1CD3C1;
+        }
+
+        .social__a--secondary:hover::after {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+            -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
+
+        .social__svg {
+            fill: white;
+            height: auto;
+            width: 20px;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        .social__svg--tel {
+            width: 22px;
+        }
+
+        .social__svg--git {
+            width: 27px;
+        }
+
+        .scroll-up {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            background: #1dd3c1;
+            border-radius: 125px;
+            padding: 1px;
+            height: 40px;
+            width: 40px;
+            font-size: 0;
+            z-index: 2;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .scroll-up::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            border-radius: 50%;
+            opacity: 0;
+            -webkit-box-shadow: 0 0 0 1px rgba(29, 211, 193, 0.3);
+            box-shadow: 0 0 0 1px rgba(29, 211, 193, 0.3);
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+
+        .scroll-up:hover::after {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .scroll-up.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-up::before {
+            display: block;
+            content: "";
+            width: 12px;
+            height: 12px;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            border-bottom: 4px solid #fff;
+            border-right: 4px solid #fff;
+            position: relative;
+            left: 11px;
+            top: 3px;
+        }
+
+        @media (min-width: 768px) {
+            .mod__header__title {
+                font-size: 22px;
+            }
+
+            .mod__header__title:after {
+                margin: 0 0;
+            }
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            width: 100%;
+            max-width: 300px;
+            background: black;
+            padding: 22px 20px 0;
+            color: white;
+            -webkit-transform: translate(110%, 0);
+            transform: translate(110%, 0);
+            -webkit-transition: -webkit-transform 0.3s 0.1s;
+            transition: -webkit-transform 0.3s 0.1s;
+            transition: transform 0.3s 0.1s;
+            transition: transform 0.3s 0.1s, -webkit-transform 0.3s 0.1s;
+            z-index: 301;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            gap: 40px;
+            -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3019607843);
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3019607843);
+        }
+
+        .nav.active {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        .nav__toggle {
+            width: 30px;
+            height: 30px;
+            margin: -6px -11px 0;
+            fill: #1CD3C1;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .nav__toggle:hover {
+            fill: white;
+        }
+
+        .nav__ul {
+            text-align: right;
+        }
+
+        .nav__social {
+            margin: 0 -11px 0 0;
+        }
+
+        .nav__li {
+            margin: 0 0 20px;
+        }
+
+        .nav__a {
+            font: 700 20px/24px "Roboto", sans-serif;
+            color: #1CD3C1;
+        }
+
+        .nav__logo__svg {
+            position: absolute;
+            bottom: 30px;
+            right: 20px;
+        }
+
+        .nav__overlay {
+            background-color: rgba(28, 211, 193, 0.7);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 11;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .nav__overlay.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: inherit;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .header {
+            font-size: 22px;
+            color: black;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .header__right {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            display: none;
+        }
+
+        .header__toggle {
+            position: absolute;
+            right: 5px;
+            top: 11px;
+        }
+
+        .header__logo {
+            position: absolute;
+            left: 15px;
+            top: 17px;
+        }
+
+        .header__logo__svg {
+            height: 18px;
+            width: auto;
+        }
+
+        .header__ul,
+        .header .social {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 20px;
+        }
+
+        .header--animation {
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .header--beforesticky {
+            -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2509803922);
+            box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2509803922);
+            background: white;
+            height: 53px;
+            left: 0;
+            position: fixed;
+            top: -100%;
+            width: 100%;
+            z-index: 8;
+        }
+
+        .header--sticky {
+            top: 0%;
+        }
+
+        @media (min-width: 760px) {
+            .header {
+                height: 63px;
+                top: 10px;
+            }
+
+            .header--beforesticky {
+                top: -100%;
+            }
+
+            .header__toggle {
+                top: 17px;
+            }
+
+            .header--sticky {
+                top: 0;
+            }
+
+            .header__nav__a {
+                font: bold 22px/22px "Roboto", sans-serif;
+                color: #1CD3C1;
+                -webkit-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            .header__nav__a:hover {
+                color: #009688;
+            }
+
+            .header__nav__a:after {
+                content: "";
+                background: #1CD3C1;
+                height: 2px;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                top: 3px;
+                width: 0;
+                -webkit-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            .header__nav__a.active:after {
+                width: 25px;
+            }
+
+            .header__logo {
+                top: 20px;
+            }
+
+            .header__logo__svg {
+                height: 22px;
+            }
+
+            .header__right {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                gap: 15px;
+                top: 11px;
+            }
+
+            .header--sticky .header__nav__a.active {
+                color: black;
+            }
+
+            .header--sticky .header__nav__a.active:after {
+                background: black;
+            }
+
+            .header--sticky .social__a:hover {
+                background: black;
+            }
+
+            .header--sticky .social__a:hover svg {
+                fill: white;
+            }
+
+            .header--sticky .social__a:hover::after {
+                -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @media (min-width: 945px) {
+            .header__toggle {
+                display: none;
+            }
+
+            .header__right {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                gap: 15px;
+                top: 11px;
+            }
+        }
+
+        .section--home {
+            background: #111111;
+            color: white;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width: 100vw;
+            max-height: 100vh;
+        }
+
+        .section--home:before {
+            content: "";
+            height: 250px;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 235, 169, 0.6)), to(rgba(91, 55, 235, 0.6)));
+            background-image: linear-gradient(rgba(55, 235, 169, 0.6), rgba(91, 55, 235, 0.6));
+            -webkit-animation: rotate 40s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+            animation: rotate 40s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+            border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+            position: absolute;
+            width: 250px;
+        }
+
+        .section--about {
+            background: #f1f1f1;
+            padding: 25px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section--work {
+            background: #1A1A1A;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            padding: 22px 0 32px;
+        }
+
+        .section--contact {
+            -webkit-box-shadow: 0 0 14px 20px #00fff5;
+            box-shadow: 0 0 14px 20px #00fff5;
+            padding: 20px 0 50px;
+            background: linear-gradient(45deg, rgb(0, 171, 194) 0%, rgb(206, 253, 247) 27%, rgb(141, 246, 234) 40%, rgb(63, 238, 218) 56%, rgb(0, 184, 177) 100%);
+            background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(91, 55, 235, 0.5803921569)), color-stop(50%, #3feeda), to(#00fff5));
+            background: linear-gradient(0deg, rgba(91, 55, 235, 0.5803921569) 0, #3feeda 50%, #00fff5 100%);
+        }
+
+        @-webkit-keyframes rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .section--home:before {
+                width: 500px;
+                height: 500px;
+                -webkit-filter: blur(100px);
+                filter: blur(100px);
+            }
+
+            .section--about {
+                -webkit-box-shadow: inherit;
+                box-shadow: inherit;
+            }
+
+            .section--contact {
+                padding: 40px 0 50px;
+            }
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .home {
+            padding: 0 0 50px;
+        }
+
+        .home__span {
+            display: block;
+        }
+
+        .home__span-med {
+            font: 400 28px/33px "Roboto", sans-serif;
+        }
+
+        .home__span-big {
+            font: bold 39px/42px "Roboto", sans-serif;
+        }
+
+        .home__span-sma {
+            font: 400 24px/28px "Roboto", sans-serif;
+            color: #1CD3C1;
+            margin: 12px 0 0;
+        }
+
+        .home__desc {
+            font: 400 16px/22px "Roboto", sans-serif;
+            margin: 40px auto 70px;
+            max-width: 333px;
+        }
+
+        .home__scroll {
+            position: absolute;
+            bottom: 30px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .home__scroll:before,
+        .home__scroll:after {
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border-bottom: 4px solid white;
+            border-right: 4px solid white;
+            position: relative;
+            left: 16px;
+        }
+
+        .home__scroll:before {
+            -webkit-animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+            animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+
+        .home__scroll:after {
+            -webkit-animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+            animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+
+        @-webkit-keyframes down-arrow-before {
+            50% {
+                -webkit-transform: rotate(45deg) translate(70%, 70%);
+                transform: rotate(45deg) translate(70%, 70%);
+            }
+
+            100% {
+                -webkit-transform: rotate(45deg) translate(70%, 70%);
+                transform: rotate(45deg) translate(70%, 70%);
+            }
+        }
+
+        @keyframes down-arrow-before {
+            50% {
+                -webkit-transform: rotate(45deg) translate(70%, 70%);
+                transform: rotate(45deg) translate(70%, 70%);
+            }
+
+            100% {
+                -webkit-transform: rotate(45deg) translate(70%, 70%);
+                transform: rotate(45deg) translate(70%, 70%);
+            }
+        }
+
+        @-webkit-keyframes down-arrow-after {
+            50% {
+                -webkit-transform: rotate(45deg) translate(110%, 110%);
+                transform: rotate(45deg) translate(110%, 110%);
+                opacity: 0;
+            }
+
+            51% {
+                -webkit-transform: rotate(45deg) translate(-130%, -130%);
+                transform: rotate(45deg) translate(-130%, -130%);
+            }
+
+            100% {
+                -webkit-transform: rotate(45deg) translate(-70%, -70%);
+                transform: rotate(45deg) translate(-70%, -70%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes down-arrow-after {
+            50% {
+                -webkit-transform: rotate(45deg) translate(110%, 110%);
+                transform: rotate(45deg) translate(110%, 110%);
+                opacity: 0;
+            }
+
+            51% {
+                -webkit-transform: rotate(45deg) translate(-130%, -130%);
+                transform: rotate(45deg) translate(-130%, -130%);
+            }
+
+            100% {
+                -webkit-transform: rotate(45deg) translate(-70%, -70%);
+                transform: rotate(45deg) translate(-70%, -70%);
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 760px) {
+            .home__span-med {
+                font: 400 41px/41px "Roboto", sans-serif;
+            }
+
+            .home__span-big {
+                font: bold 53px/53px "Roboto", sans-serif;
+            }
+
+            .home__span-sma {
+                font: 400 29px/29px "Roboto", sans-serif;
+            }
+
+            .home__desc {
+                font: 400 19px/25px "Roboto", sans-serif;
+                margin: 40px auto 70px;
+                max-width: 680px;
+            }
+        }
+
+        .mod__about .box-about {
+            margin: 0 0 25px 0;
+        }
+
+        .mod__about .box-about__figure {
+            height: 100px;
+            margin: 0 0 20px;
+            width: 155px;
+        }
+
+        .mod__about .box-about__title {
+            color: rgb(0, 0, 1);
+            font: bold 18px/22px "Roboto", sans-serif;
+            margin: 0 0 6px;
+        }
+
+        .mod__about .box-about__text {
+            color: rgb(0, 0, 1);
+            font: 400 15px/20px "Roboto", sans-serif;
+            padding: 0 30px 0 0;
+        }
+
+        .skills__ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills__a {
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .skills__a:hover {
+            opacity: 0.7;
+        }
+
+        @media (min-width: 768px) {
+            .mod__skills {
+                margin: 15px 0;
+            }
+
+            .mod__about__content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .work__li {
+            padding: 10px 15px 30px 35px;
+            margin: 0 -15px;
+        }
+
+        .work__li+.work__li {
+            padding: 30px 15px 30px 35px;
+        }
+
+        .work__more {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .work__more__text {
+            font: 700 20px/24px "Roboto", sans-serif;
+            margin: 5px auto 21px;
+            max-width: 210px;
+        }
+
+        .work__line {
+            background: rgba(255, 255, 255, 0.15);
+            height: 0;
+            position: absolute;
+            width: 2px;
+            margin: 30px 0 0 0;
+        }
+
+        .work-item__aside {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .work-item__years {
+            font: 700 29px/29px "Roboto", sans-serif;
+            display: block;
+            margin: 0 0 13px;
+        }
+
+        .work-item__bg {
+            background: #1a1a1a;
+            color: white;
+            padding: 10px 0;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            opacity: 0.46;
+            position: relative;
+        }
+
+        .work-item__bg:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: white;
+            opacity: 0.46;
+            display: block;
+            position: absolute;
+            left: -32px;
+            top: 15px;
+            border-radius: 125px;
+            border: 8px solid #1a1a1a;
+        }
+
+        .work-item .mitad-viewport {
+            color: white;
+            opacity: 1;
+        }
+
+        .work-item .mitad-viewport:before {
+            opacity: 1;
+            background: white;
+        }
+
+        .work-item__title {
+            font: 400 27px/27px "Roboto", sans-serif;
+            color: #1CD3C1;
+            margin: 0 0 15px;
+        }
+
+        .work-item__title-block {
+            display: block;
+        }
+
+        .work-item__subtitle {
+            font: 700 21px/21px "Roboto", sans-serif;
+            color: #1CD3C1;
+            display: block;
+            margin: 0 0 16px;
+        }
+
+        .work-item a:hover {
+            text-decoration: underline;
+        }
+
+        .work-item__desc {
+            font: 400 16px/23px "Roboto", sans-serif;
+            margin: 0 0 19px;
+        }
+
+        .work-item__ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .work-item__skill {
+            background: #1CD3C1;
+            display: block;
+            font: 700 12px/12px "Roboto", sans-serif;
+            color: black;
+            border-radius: 4px;
+            text-transform: uppercase;
+            padding: 7px 10px 5px;
+            letter-spacing: 1px;
+        }
+
+        @media (min-width: 768px) {
+            .work__ul {
+                margin: 30px auto;
+            }
+
+            .work__li {
+                margin: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .work__li+.work__li {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .work__more {
+                padding: 30px 0 10px;
+            }
+
+            .work__more__text {
+                font: 700 30px/26px "Roboto", sans-serif;
+                max-width: 310px;
+            }
+
+            .work__line {
+                display: block;
+                margin: 30px 0 0 79px;
+            }
+
+            .work-item {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+
+            .work-item__aside {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 22%;
+                flex: 0 0 22%;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+            }
+
+            .work-item__bg:before {
+                display: none;
+            }
+
+            .work-item__years {
+                margin: 0 0 0;
+            }
+        }
+
+        .mod__contact {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contact__subtitle {
+            font: 400 18px/19px "Roboto", sans-serif;
+        }
+
+        .contact__title {
+            font: 700 34px/36px "Roboto", sans-serif;
+            margin: -2px 0 0;
+        }
+
+        .contact__desc {
+            font: 400 16px/19px "Roboto", sans-serif;
+            margin: 23px 0 0;
+        }
+
+        .contact__link {
+            margin: 50px auto;
+        }
+
+        @media (min-width: 768px) {
+            .contact__subtitle {
+                font: 400 30px/30px "Roboto", sans-serif;
+            }
+
+            .contact__title {
+                font: bold 41px/41px "Roboto", sans-serif;
+                margin: -6px 0 0;
+            }
+        }
+
+        .section--quote {
+            background: #fafafa;
+            margin: 0 0 -32px;
+        }
+
+        .mod__quote {
+            margin: 0;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .mod__quote__img {
+            height: 30px;
+            width: auto;
+            margin: 0 0 6px;
+        }
+
+        .mod__quote__text {
+            color: rgb(0, 0, 1);
+            font: bold 24px/27px "Roboto", sans-serif;
+            margin: 0 0 15px;
+        }
+
+        .mod__quote__name {
+            color: rgb(0, 0, 1);
+            display: block;
+            font: 400 14px/14px "Roboto", sans-serif;
+        }
+
+        .mod__quote__name:before {
+            content: "";
+            background: rgb(0, 0, 1);
+            display: block;
+            height: 1px;
+            margin: 0 0 8px;
+            width: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .mod__quote {
+                margin: auto;
+                max-width: 860px;
+                padding: 80px 0 100px;
+            }
+
+            .mod__quote__img {
+                position: absolute;
+                left: -60px;
+                height: 42px;
+            }
+
+            .mod__quote__text {
+                font: bold 51px/54px "Roboto", sans-serif;
+                margin: 0 0 25px;
+            }
+
+            .mod__quote__name {
+                font: 400 14px/14px "Roboto", sans-serif;
+            }
+
+            .mod__quote__name:before {
+                margin: 0 0 15px;
+            }
+        }
     </style>
 </head>
 
@@ -254,8 +1480,7 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-1">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-efective.svg" class="box-about__img"
+                                <img src="static/dist/images/about/about-efective.svg" class="box-about__img"
                                     alt="Effective Communication" title="Effective Communication" width="155"
                                     height="100">
                             </figure>
@@ -267,8 +1492,7 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-3">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-problems.svg" class="box-about__img"
+                                <img src="static/dist/images/about/about-problems.svg" class="box-about__img"
                                     alt="Problem Solving" title="Problem Solving" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Problem Solving</h3>
@@ -279,8 +1503,7 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-5">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-creativity.svg" class="box-about__img"
+                                <img src="static/dist/images/about/about-creativity.svg" class="box-about__img"
                                     alt="Creativity and Design" title="Creativity and Design" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Creativity and Design</h3>
@@ -291,10 +1514,8 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-7">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-adaptability.svg"
-                                    class="box-about__img" alt="Adaptability" title="Adaptability" width="155"
-                                    height="100">
+                                <img src="static/dist/images/about/about-adaptability.svg" class="box-about__img"
+                                    alt="Adaptability" title="Adaptability" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Adaptability</h3>
                             <p class="box-about__text">I am always willing to learn new technologies and stay up-to-date
@@ -305,10 +1526,9 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-9">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-timemanagement.svg"
-                                    class="box-about__img" alt="Time Management and Organization"
-                                    title="Time Management and Organization" width="155" height="100">
+                                <img src="static/dist/images/about/about-timemanagement.svg" class="box-about__img"
+                                    alt="Time Management and Organization" title="Time Management and Organization"
+                                    width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Time Management and Organization</h3>
                             <p class="box-about__text">Ability to set priorities and meet deadlines. Experience with
@@ -318,10 +1538,8 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-11">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-attentiontodetail.svg"
-                                    class="box-about__img" alt="Attention to Detail" title="Attention to Detail"
-                                    width="155" height="100">
+                                <img src="static/dist/images/about/about-attentiontodetail.svg" class="box-about__img"
+                                    alt="Attention to Detail" title="Attention to Detail" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Attention to Detail</h3>
                             <p class="box-about__text">I focus on creating high-quality, error-free websites. You can
@@ -331,10 +1549,9 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-13">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-empathylistening.svg"
-                                    class="box-about__img" alt="Empathy and Active Listening"
-                                    title="Empathy and Active Listening" width="155" height="100">
+                                <img src="static/dist/images/about/about-empathylistening.svg" class="box-about__img"
+                                    alt="Empathy and Active Listening" title="Empathy and Active Listening" width="155"
+                                    height="100">
                             </figure>
                             <h3 class="box-about__title">Empathy and Active Listening</h3>
                             <p class="box-about__text">I strive to understand the needs and expectations of end-users
@@ -353,127 +1570,111 @@
                         <li class="skills__li viewport-observer delay-3">
                             <a href="https://www.w3schools.com/css/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="CSS 3">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/css3.svg" alt="CSS 3" title="CSS 3"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/css3.svg" alt="CSS 3" title="CSS 3" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-3">
                             <a href="https://www.w3.org/html/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="HTML 5">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/html5.svg" alt="HTML 5" title="HTML 5"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/html5.svg" alt="HTML 5" title="HTML 5" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-4">
                             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skills__a"
                                 target="_blank" rel="noopener noreferrer" title="JavaScript">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/javascript.svg" alt="JavaScript"
-                                    title="JavaScript" width="30" height="30">
+                                <img src="static/dist/images/skills/javascript.svg" alt="JavaScript" title="JavaScript"
+                                    width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-5">
                             <a href="https://sass-lang.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="SASS">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/sass.svg" alt="SASS" title="SASS"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/sass.svg" alt="SASS" title="SASS" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-6">
                             <a href="https://gulpjs.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Gulp">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/gulp.svg" alt="Gulp" title="Gulp"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/gulp.svg" alt="Gulp" title="Gulp" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-7">
                             <a href="https://git-scm.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Git">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/git.svg" alt="Git" title="Git" width="30"
+                                <img src="static/dist/images/skills/git.svg" alt="Git" title="Git" width="30"
                                     height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-8">
                             <a href="https://www.figma.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Figma">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/figma.svg" alt="Figma" title="Figma"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/figma.svg" alt="Figma" title="Figma" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-9">
                             <a href="https://jquery.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="jQuery">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/jquery.svg" alt="jQuery" title="jQuery"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/jquery.svg" alt="jQuery" title="jQuery" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-10">
                             <a href="https://react.dev/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="React JS">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/react.svg" alt="React JS" title="React JS"
+                                <img src="static/dist/images/skills/react.svg" alt="React JS" title="React JS"
                                     width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-11">
                             <a href="https://www.adobe.com/in/products/illustrator.html" class="skills__a"
                                 target="_blank" rel="noopener noreferrer" title="illustrator">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/illustrator.svg" alt="illustrator"
+                                <img src="static/dist/images/skills/illustrator.svg" alt="illustrator"
                                     title="illustrator" width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-12">
                             <a href="https://www.adobe.com/products/photoshop.html" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="photoshop">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/photoshop.svg" alt="photoshop"
-                                    title="photoshop" width="30" height="30">
+                                <img src="static/dist/images/skills/photoshop.svg" alt="photoshop" title="photoshop"
+                                    width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-13">
                             <a href="https://www.sketch.com/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="sketch">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/sketch.svg" alt="sketch" title="sketch"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/sketch.svg" alt="sketch" title="sketch" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-14">
                             <a href="https://helpx.adobe.com/support/xd.html" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="xd">
-                                <img src="static/dist/images/pixel.png" data-lazyload="static/dist/images/skills/xd.svg"
-                                    alt="xd" title="xd" width="30" height="30">
+                                <img src="static/dist/images/skills/xd.svg" alt="xd" title="xd" width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-15">
                             <a href="https://github.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Github">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/github.svg" alt="Github" title="GitHub"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/github.svg" alt="Github" title="GitHub" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-16">
                             <a href="https://code.visualstudio.com/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="VC Code">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/vscode.svg" alt="VC Code" title="VC Code"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/vscode.svg" alt="VC Code" title="VC Code" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-17">
                             <a href="https://getbem.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="BEM">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/bem.svg" alt="BEM" title="BEM" width="30"
+                                <img src="static/dist/images/skills/bem.svg" alt="BEM" title="BEM" width="30"
                                     height="30">
                             </a>
                         </li>
@@ -744,8 +1945,7 @@
         <div class="section--quote">
             <div class="row">
                 <blockquote class="mod__quote">
-                    <img src="static/dist/images/pixel.png" data-lazyload="static/dist/images/quote/quote.png"
-                        class="mod__quote__img" alt="Design is not just what it looks like and feels like. Design is how it
+                    <img src="static/dist/images/quote/quote.png" class="mod__quote__img" alt="Design is not just what it looks like and feels like. Design is how it
                         works." title="Design is not just what it looks like and feels like. Design is how it
                         works." width="42" height="42">
                     <p class="mod__quote__text texto-animado"> Design is not just what it looks like and feels like.
