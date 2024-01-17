@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Patricio Baliña | Front end Developer</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="https://patriciobalina.com.ar/">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <!-- Include the AMP CSS -->
+    <style amp-custom>
+        /* Your custom styles go here */
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__logo">
+            <svg width="314" height="27" viewBox="0 0 314 27" fill="none" class="header__logo__svg">
+                <path
+                    d="M18.3369 7.83289V11.984L5.08957 17.254L18.3369 22.5241V26.6751L0 19.3837V15.1243L18.3369 7.83289Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M27.1664 26.3864V0.613635H38.7894C45.2145 0.613635 47.7052 4.69251 47.7052 8.87968C47.7052 13.0668 45.2145 17.1457 38.7894 17.1457H32.8335V26.3864H27.1664ZM32.8335 5.01738V12.742H37.2372C39.8723 12.742 42.2185 12.1644 42.2185 8.87968C42.2185 5.59492 39.8723 5.01738 37.2372 5.01738H32.8335Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M62.3239 19.1671V17.254C61.4576 18.012 59.6527 18.0481 58.0645 18.3369C56.4763 18.6618 55.0324 19.2032 55.0324 21.0802C55.0324 22.9933 56.5124 23.4626 58.1728 23.4626C62.1795 23.4626 62.3239 20.2861 62.3239 19.1671ZM55.61 13.4639H50.4843C50.7731 8.6631 55.0685 7.21925 59.2557 7.21925C62.9736 7.21925 67.4495 8.04947 67.4495 12.5254V22.2353C67.4495 23.9318 67.63 25.6283 68.0993 26.3864H62.9014C62.7209 25.8088 62.5765 25.1952 62.5404 24.5815C60.9161 26.2781 58.5338 26.8917 56.2597 26.8917C52.7223 26.8917 49.9067 25.123 49.9067 21.2968C49.9067 17.0735 53.0832 16.0628 56.2597 15.6297C59.4001 15.1604 62.3239 15.2687 62.3239 13.1751C62.3239 10.9733 60.8078 10.6484 59.003 10.6484C57.0538 10.6484 55.7904 11.4425 55.61 13.4639Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M77.9253 2.12968V7.7246H81.6794V11.1537H77.9253V20.3944C77.9253 22.127 78.3585 22.5602 80.0911 22.5602C80.6326 22.5602 81.1379 22.5241 81.6794 22.4158V26.4225C80.813 26.5668 79.6941 26.6029 78.6834 26.6029C75.543 26.6029 72.7997 25.881 72.7997 22.1631V11.1537H69.6954V7.7246H72.7997V2.12968H77.9253Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M84.1181 26.3864V7.7246H88.9911V11.1898H89.0633C90.0018 8.84358 92.5285 7.21925 95.0192 7.21925C95.3802 7.21925 95.8133 7.29144 96.1382 7.39973V12.1644C95.6689 12.0561 94.9109 11.984 94.2973 11.984C90.5433 11.984 89.2438 14.6912 89.2438 17.9759V26.3864H84.1181Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M98.2921 26.3864V7.7246H103.418V26.3864H98.2921ZM103.418 0.613635V4.8369H98.2921V0.613635H103.418Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M125.177 14.2941H120.16C119.835 12.2005 118.499 11.0815 116.37 11.0815C113.085 11.0815 112.002 14.4024 112.002 17.1457C112.002 19.8168 113.049 23.0294 116.261 23.0294C118.644 23.0294 120.015 21.5134 120.34 19.2393H125.285C124.636 24.1845 121.206 26.8917 116.297 26.8917C110.666 26.8917 106.876 22.9211 106.876 17.3262C106.876 11.5147 110.341 7.21925 116.406 7.21925C120.809 7.21925 124.852 9.52941 125.177 14.2941Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M128.325 26.3864V7.7246H133.451V26.3864H128.325ZM133.451 0.613635V4.8369H128.325V0.613635H133.451Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M136.909 17.0735C136.909 11.1176 140.7 7.21925 146.547 7.21925C152.431 7.21925 156.221 11.1176 156.221 17.0735C156.221 22.9933 152.431 26.8917 146.547 26.8917C140.7 26.8917 136.909 22.9933 136.909 17.0735ZM142.035 17.0735C142.035 20.0334 143.082 23.0294 146.547 23.0294C150.048 23.0294 151.095 20.0334 151.095 17.0735C151.095 14.0775 150.048 11.0815 146.547 11.0815C143.082 11.0815 142.035 14.0775 142.035 17.0735Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M175.809 14.9078V21.9826H181.873C184.111 21.9826 186.06 21.2607 186.06 18.5896C186.06 15.9545 184.399 14.9078 181.981 14.9078H175.809ZM170.141 26.3864V0.613635H182.27C187.179 0.613635 190.5 2.20187 190.5 7.00267C190.5 9.52941 189.236 11.2981 186.998 12.381C190.139 13.2834 191.727 15.7019 191.727 18.9144C191.727 24.1484 187.287 26.3864 182.631 26.3864H170.141ZM175.809 5.01738V11.0455H181.548C183.533 11.0455 185.013 10.143 185.013 7.97727C185.013 5.52273 183.136 5.01738 181.115 5.01738H175.809Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M206.638 19.1671V17.254C205.772 18.012 203.967 18.0481 202.379 18.3369C200.791 18.6618 199.347 19.2032 199.347 21.0802C199.347 22.9933 200.827 23.4626 202.487 23.4626C206.494 23.4626 206.638 20.2861 206.638 19.1671ZM199.925 13.4639H194.799C195.088 8.6631 199.383 7.21925 203.57 7.21925C207.288 7.21925 211.764 8.04947 211.764 12.5254V22.2353C211.764 23.9318 211.945 25.6283 212.414 26.3864H207.216C207.035 25.8088 206.891 25.1952 206.855 24.5815C205.231 26.2781 202.848 26.8917 200.574 26.8917C197.037 26.8917 194.221 25.123 194.221 21.2968C194.221 17.0735 197.398 16.0628 200.574 15.6297C203.715 15.1604 206.638 15.2687 206.638 13.1751C206.638 10.9733 205.122 10.6484 203.318 10.6484C201.368 10.6484 200.105 11.4425 199.925 13.4639Z"
+                    fill="#1CD3C1" />
+                <path d="M215.887 26.3864V0.613635H221.013V26.3864H215.887Z" fill="#1CD3C1" />
+                <path
+                    d="M225.193 26.3864V7.7246H230.319V26.3864H225.193ZM230.319 0.613635V4.8369H225.193V0.613635H230.319Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M234.355 26.3864V7.7246H239.228V10.3235H239.336C240.635 8.22995 242.873 7.21925 245.039 7.21925C250.49 7.21925 251.861 10.2874 251.861 14.9078V26.3864H246.736V15.8463C246.736 12.7781 245.833 11.262 243.451 11.262C240.672 11.262 239.48 12.8142 239.48 16.6043V26.3864H234.355ZM247.241 0.613635H249.732C249.479 1.44385 249.19 2.45454 248.613 3.28476C248.035 4.11497 247.169 4.72861 245.689 4.72861C244.606 4.72861 243.631 4.40374 242.729 4.11497C241.827 3.79011 241.033 3.50134 240.202 3.50134C239.228 3.50134 238.903 4.11497 238.686 5.01738H236.484C236.954 2.9238 237.856 0.613635 241.033 0.613635C241.863 0.613635 242.585 0.938501 243.343 1.22727C244.101 1.55214 244.895 1.877 245.725 1.877C246.808 1.877 247.277 1.29946 247.241 0.613635Z"
+                    fill="#1CD3C1" />
+                <path
+                    d="M267.375 19.1671V17.254C266.508 18.012 264.704 18.0481 263.115 18.3369C261.527 18.6618 260.083 19.2032 260.083 21.0802C260.083 22.9933 261.563 23.4626 263.224 23.4626C267.23 23.4626 267.375 20.2861 267.375 19.1671ZM260.661 13.4639H255.535C255.824 8.6631 260.119 7.21925 264.306 7.21925C268.024 7.21925 272.5 8.04947 272.5 12.5254V22.2353C272.5 23.9318 272.681 25.6283 273.15 26.3864H267.952C267.772 25.8088 267.627 25.1952 267.591 24.5815C265.967 26.2781 263.585 26.8917 261.31 26.8917C257.773 26.8917 254.958 25.123 254.958 21.2968C254.958 17.0735 258.134 16.0628 261.31 15.6297C264.451 15.1604 267.375 15.2687 267.375 13.1751C267.375 10.9733 265.859 10.6484 264.054 10.6484C262.105 10.6484 260.841 11.4425 260.661 13.4639Z"
+                    fill="#1CD3C1" />
+                <path d="M278.825 27L288.896 0H293.011L282.94 27H278.825Z" fill="#1CD3C1" />
+                <path
+                    d="M294.278 26.6751V22.5241L307.525 17.254L294.278 11.984V7.83289L312.615 15.1243V19.3837L294.278 26.6751Z"
+                    fill="#1CD3C1" />
+            </svg>
+        </div>
+
+        <button type="button" aria-label="open nav" class="header__toggle" data-togglenav>
+            <svg width="48" height="32" viewBox="0 0 48 32" fill="none">
+                <path
+                    d="M32.5497 16.4351H15.4503C15.2015 16.4351 15 16.2403 15 15.9998C15 15.7592 15.2015 15.5645 15.4503 15.5645H32.5497C32.7985 15.5645 33 15.7592 33 15.9998C33 16.2403 32.7985 16.4351 32.5497 16.4351Z"
+                    fill="#1CD3C1" stroke="#1CD3C1" />
+                <path
+                    d="M32.5497 10.8707H15.4503C15.2015 10.8707 15 10.6759 15 10.4353C15 10.1948 15.2015 10 15.4503 10H32.5497C32.7985 10 33 10.1948 33 10.4353C33 10.6759 32.7985 10.8707 32.5497 10.8707Z"
+                    fill="#1CD3C1" stroke="#1CD3C1" />
+                <path
+                    d="M32.5497 21.9996H15.4503C15.2015 21.9996 15 21.8048 15 21.5642C15 21.3237 15.2015 21.1289 15.4503 21.1289H32.5497C32.7985 21.1289 33 21.3237 33 21.5642C33 21.8048 32.7985 21.9996 32.5497 21.9996Z"
+                    fill="#1CD3C1" stroke="#1CD3C1" />
+            </svg>
+        </button>
+
+        <div class="header__right">
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li">
+                        <a href="#home" class="header__nav__a active" title="Home" data-anchor="home">Home</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#about" class="header__nav__a" title="About" data-anchor="about">About</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#work" class="header__nav__a" title="Experience" data-anchor="work">Experience</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#contact" class="header__nav__a" title="Contact" data-anchor="contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="header__social social__ul social__ul--secondary">
+                <li class="social__li">
+                    <a href="mailto:paddybalinia@gmail.com?subject=Contact%20from%20website&body=Hi%20Paddy!"
+                        class="social__a social__a--secondary" target="_blank" rel="noopener noreferrer" title="Mail">
+                        <svg class="social__svg social__svg--mail" viewBox="0 0 512 512">
+
+                            <g>
+                                <polygon points="512,295.199 445.92,226.559 512,169.6 	" />
+                                <polygon points="66.16,226.559 0,295.279 0,169.6 	" />
+                                <path
+                                    d="M512,357.6v63.199c0,15.281-12.4,27.682-27.68,27.682H27.68c-15.281,0-27.68-12.4-27.68-27.682V357.6
+                       l98.959-102.721L212,352.238c11.76,10.082,27.359,15.682,44,15.682c16.641,0,32.32-5.6,44.08-15.682l112.959-97.359L512,357.6z" />
+                                <path d="M512,91.119v27.68l-241.442,208c-7.76,6.72-21.359,6.72-29.119,0L0,118.799v-27.68
+                       c0-15.279,12.398-27.6,27.68-27.6H484.32C499.6,63.519,512,75.84,512,91.119z" />
+                            </g>
+                        </svg></a>
+                </li>
+                <li class="social__li">
+                    <a href="tel:+541160416194" class="social__a social__a--secondary" target="_blank"
+                        rel="noopener noreferrer" title="Phone">
+                        <svg class="social__svg social__svg--tel" viewBox="0 0 24 24">
+                            <path
+                                d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+                        </svg></a>
+                </li>
+                <li class="social__li">
+                    <a href="https://www.linkedin.com/in/patriciobalina/" class="social__a social__a--secondary"
+                        target="_blank" rel="noopener noreferrer" title="Linkedin">
+                        <svg class="social__svg social__svg--linkedin" viewBox="0 0 32 32">
+
+                            <path
+                                d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z">
+                            </path>
+                        </svg></a>
+                </li>
+                <li class="social__li">
+                    <a href="https://github.com/paddybalinia" class="social__a social__a--secondary" target="_blank"
+                        rel="noopener noreferrer" title="Github">
+                        <svg class="social__svg social__svg--secondary social__svg--git"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" />
+                                <path
+                                    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0" />
+                            </g>
+                        </svg></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- home -->
+    <section id="home" class="section section--home" data-section="home">
+        <div class="row">
+            <div class="home" data-scroll-speed="6">
+                <h1 class="home__title">
+                    <span class="home__span home__span-med">Hi, I am </span>
+                    <span class="home__span home__span-big">Patricio Baliña</span>
+                    <span class="home__span home__span-sma">Front end Developer</span>
+                </h1>
+
+                <p class="home__desc">I create intuitive and visually appealing interfaces that enhance your user
+                    experience through research. I turn designs into clean, concise, and responsive code using HTML,
+                    CSS, and JavaScript with experience in building optimized web experiences.</p>
+
+                <a href="https://drive.google.com/drive/folders/1rQtQZoneUMSqO15zI2AdHDqPkQ5hmgcO?usp=sharing"
+                    class="home__button button" title="Download CV" target="_blank" rel="noopener noreferrer">DOWNLOAD
+                    CV</a>
+            </div>
+        </div>
+        <button type="button" aria-label="scroll to about" class="home__scroll" data-anchor="about"></button>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section section--about" data-section="about">
+        <div class="row">
+            <div class="mod mod__about">
+                <div class="mod__header">
+                    <h2 class="mod__header__title">About me</h2>
+                </div>
+                <div class="mod__content mod__about__content">
+
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-1">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-efective.svg" class="box-about__img"
+                                    alt="Effective Communication" title="Effective Communication" width="155"
+                                    height="100">
+                            </figure>
+                            <h3 class="box-about__title">Effective Communication</h3>
+                            <p class="box-about__text">Ability to work in a team and collaborate with designers, backend
+                                developers, and the client.</p>
+                        </div>
+                    </div>
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-3">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-problems.svg" class="box-about__img"
+                                    alt="Problem Solving" title="Problem Solving" width="155" height="100">
+                            </figure>
+                            <h3 class="box-about__title">Problem Solving</h3>
+                            <p class="box-about__text">I'm a problem solver who finds creative, practical, and effective
+                                solutions to challenges.</p>
+                        </div>
+                    </div>
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-5">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-creativity.svg" class="box-about__img"
+                                    alt="Creativity and Design" title="Creativity and Design" width="155" height="100">
+                            </figure>
+                            <h3 class="box-about__title">Creativity and Design</h3>
+                            <p class="box-about__text">I consider myself a developer with an aesthetic eye, without
+                                neglecting the good practices of web design.</p>
+                        </div>
+                    </div>
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-7">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-adaptability.svg"
+                                    class="box-about__img" alt="Adaptability" title="Adaptability" width="155"
+                                    height="100">
+                            </figure>
+                            <h3 class="box-about__title">Adaptability</h3>
+                            <p class="box-about__text">I am always willing to learn new technologies and stay up-to-date
+                                with the latest trends in Front end development. I am also able to adapt to changes in
+                                project requirements and work environment.</p>
+                        </div>
+                    </div>
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-9">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-timemanagement.svg"
+                                    class="box-about__img" alt="Time Management and Organization"
+                                    title="Time Management and Organization" width="155" height="100">
+                            </figure>
+                            <h3 class="box-about__title">Time Management and Organization</h3>
+                            <p class="box-about__text">Ability to set priorities and meet deadlines. Experience with
+                                tools like Trello, Monday, or Slack.</p>
+                        </div>
+                    </div>
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-11">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-attentiontodetail.svg"
+                                    class="box-about__img" alt="Attention to Detail" title="Attention to Detail"
+                                    width="155" height="100">
+                            </figure>
+                            <h3 class="box-about__title">Attention to Detail</h3>
+                            <p class="box-about__text">I focus on creating high-quality, error-free websites. You can
+                                mention your focus on data validation, testing, and quality assurance.</p>
+                        </div>
+                    </div>
+                    <div class="mod__about__col">
+                        <div class="box-about viewport-observer animation-bottom delay-13">
+                            <figure class="box-about__figure">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/about/about-empathylistening.svg"
+                                    class="box-about__img" alt="Empathy and Active Listening"
+                                    title="Empathy and Active Listening" width="155" height="100">
+                            </figure>
+                            <h3 class="box-about__title">Empathy and Active Listening</h3>
+                            <p class="box-about__text">I strive to understand the needs and expectations of end-users
+                                and how this influences Front end development. I enjoy supporting my teammates, being
+                                available for questions or concerns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mod mod__skills">
+                <div class="mod__header">
+                    <h2 class="mod__header__title">Skills</h2>
+                </div>
+                <div class="mod__content">
+                    <ul class="skills__ul">
+                        <li class="skills__li viewport-observer delay-3">
+                            <a href="https://www.w3schools.com/css/" class="skills__a" target="_blank"
+                                rel="noopener noreferrer" title="CSS 3">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/css3.svg" alt="CSS 3" title="CSS 3"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-3">
+                            <a href="https://www.w3.org/html/" class="skills__a" target="_blank"
+                                rel="noopener noreferrer" title="HTML 5">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/html5.svg" alt="HTML 5" title="HTML 5"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-4">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skills__a"
+                                target="_blank" rel="noopener noreferrer" title="JavaScript">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/javascript.svg" alt="JavaScript"
+                                    title="JavaScript" width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-5">
+                            <a href="https://sass-lang.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="SASS">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/sass.svg" alt="SASS" title="SASS"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-6">
+                            <a href="https://gulpjs.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="Gulp">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/gulp.svg" alt="Gulp" title="Gulp"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-7">
+                            <a href="https://git-scm.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="Git">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/git.svg" alt="Git" title="Git" width="30"
+                                    height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-8">
+                            <a href="https://www.figma.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="Figma">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/figma.svg" alt="Figma" title="Figma"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-9">
+                            <a href="https://jquery.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="jQuery">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/jquery.svg" alt="jQuery" title="jQuery"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-10">
+                            <a href="https://react.dev/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="React JS">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/react.svg" alt="React JS" title="React JS"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-11">
+                            <a href="https://www.adobe.com/in/products/illustrator.html" class="skills__a"
+                                target="_blank" rel="noopener noreferrer" title="illustrator">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/illustrator.svg" alt="illustrator"
+                                    title="illustrator" width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-12">
+                            <a href="https://www.adobe.com/products/photoshop.html" class="skills__a" target="_blank"
+                                rel="noopener noreferrer" title="photoshop">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/photoshop.svg" alt="photoshop"
+                                    title="photoshop" width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-13">
+                            <a href="https://www.sketch.com/" class="skills__a" target="_blank"
+                                rel="noopener noreferrer" title="sketch">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/sketch.svg" alt="sketch" title="sketch"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-14">
+                            <a href="https://helpx.adobe.com/support/xd.html" class="skills__a" target="_blank"
+                                rel="noopener noreferrer" title="xd">
+                                <img src="static/dist/images/pixel.png" data-lazyload="static/dist/images/skills/xd.svg"
+                                    alt="xd" title="xd" width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-15">
+                            <a href="https://github.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="Github">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/github.svg" alt="Github" title="GitHub"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-16">
+                            <a href="https://code.visualstudio.com/" class="skills__a" target="_blank"
+                                rel="noopener noreferrer" title="VC Code">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/vscode.svg" alt="VC Code" title="VC Code"
+                                    width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="skills__li viewport-observer delay-17">
+                            <a href="https://getbem.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
+                                title="BEM">
+                                <img src="static/dist/images/pixel.png"
+                                    data-lazyload="static/dist/images/skills/bem.svg" alt="BEM" title="BEM" width="30"
+                                    height="30">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- work -->
+    <section id="work" class="section section--work" data-section="work">
+        <div class="row">
+            <div class="mod mod__skills">
+                <div class="mod__header">
+                    <h2 class="mod__header__title secondary">Work experience</h2>
+                </div>
+                <span id="linea" class="work__line"></span>
+                <ul class="work__ul">
+                    <li class="work__li viewport-observer animation-bottom">
+                        <div class="work-item">
+                            <div class="work-item__aside">
+
+                                <span class="work-item__years"> <span id="elemento1" class=work-item__bg>2023 -
+                                        2024</span></span>
+                            </div>
+                            <div class="work-item__main">
+                                <h3 class="work-item__title">Freelance Front end Developer</h3>
+                                <span class="work-item__subtitle">Freelance Web Developer</span>
+                                <p class="work-item__desc">I build interactive web interfaces that captivate users. My
+                                    magic with HTML, CSS, and JavaScript ensures fluid and frictionless experiences. I
+                                    integrate front-end functionalities with the backend for seamless operation,
+                                    optimize performance for breakneck speed, and make it compatible with everything
+                                    from desktop to smartphones. I keep the code impeccable and clean, so everything
+                                    keeps running like a dream.</p>
+                                <ul class="work-item__ul">
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">html 5</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">CSS 3</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">SASS</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">JavaScript</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Git</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Github</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Responsive Design</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">SEO</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Performance optimization</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work__li viewport-observer animation-bottom">
+                        <div class="work-item">
+                            <div class="work-item__aside">
+
+                                <span class="work-item__years"> <span class=work-item__bg>2016 - 2023</span></span>
+                            </div>
+                            <div class="work-item__main">
+                                <h3 class="work-item__title">Senior Front end Developer</h3>
+                                <a href="https://iconosur.com/" class="work-item__subtitle" target="_blank"
+                                    rel="noopener noreferrer" title="Iconosur">Iconosur</a>
+                                <p class="work-item__desc">At Iconosur, I led the development and maintenance of user
+                                    interfaces for high-traffic websites with millions of daily visits. Collaborating
+                                    closely with designers and developers, I implemented new features and
+                                    functionalities, ensuring visual quality and optimal platform performance. This
+                                    experience honed my front-end skills and equipped me to successfully navigate
+                                    large-scale challenges. I acquired solid web development expertise through
+                                    methodologies like BEM and Pixel Perfect, implemented optimization and SEO
+                                    strategies, built semantic webs, and wielded Vanilla JS. Recently, I've shifted
+                                    focus to crafting attractive and functional interfaces with Next.js and React JS.
+                                </p>
+                                <ul class="work-item__ul">
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">html 5</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">CSS 3</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">SASS</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">JavaScript</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Git</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Github</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">React JS</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Responsive Design</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">JSX</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">SEO</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Performance optimization</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work__li viewport-observer animation-bottom">
+                        <div class="work-item">
+                            <div class="work-item__aside">
+
+                                <span class="work-item__years"> <span class=work-item__bg>2015 - 2016</span></span>
+                            </div>
+                            <div class="work-item__main">
+                                <h3 class="work-item__title">Part Time Front end
+                                    Developer</h3>
+                                <a href="https://studiohakuna.com/" class="work-item__subtitle" target="_blank"
+                                    rel="noopener noreferrer" title="Studio Hakuna">Studio Hakuna</a>
+                                <p class="work-item__desc">At Hakuna, I utilized Bootstrap's capabilities to craft
+                                    responsive and visually appealing institutional websites for non-profit
+                                    organizations. Focusing on clean layouts and interactive elements like animated
+                                    infographics, I seamlessly converted design mockups and user stories into functional
+                                    WordPress themes. Throughout the development process, I collaborated closely with
+                                    designers and developers, transcribing their ideas into intuitive websites that met
+                                    client requirements.
+
+                                <ul class="work-item__ul">
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">HTML5</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">CSS3</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">JavaScript</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">jQuery</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">GitHub</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Bootstrap</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">WordPress</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work__li viewport-observer animation-bottom">
+                        <div class="work-item">
+                            <div class="work-item__aside">
+
+                                <span class="work-item__years"> <span class=work-item__bg>2014 - 2016</span></span>
+                            </div>
+                            <div class="work-item__main">
+                                <h3 class="work-item__title">Freelance Front end Developer</h3>
+                                <span class="work-item__subtitle">Freelance Web Developer</span>
+                                <p class="work-item__desc">I collaborated with clients on the construction of
+                                    institutional websites, using HTML, CSS, and jQuery. I designed and styled visual
+                                    elements with CSS, implemented dynamic interactions with jQuery, and provided
+                                    guidance on best practices. I ensured responsiveness by conducting extensive testing
+                                    on different devices and browsers. I maintained clear communication and met client
+                                    expectations at every stage of the project.</p>
+                                <ul class="work-item__ul">
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">HTML5</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">CSS3</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">JavaScript</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">jQuery</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">GitHub</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Responsive Design</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work__li viewport-observer animation-bottom">
+                        <div class="work-item">
+                            <div class="work-item__aside">
+
+                                <span class="work-item__years"><span id="stop-linea"></span> <span
+                                        class=work-item__bg>2011 - 2014</span></span>
+                            </div>
+                            <div class="work-item__main">
+                                <h3 class="work-item__title">Junior Front end Developer</h3>
+                                <a href="https://dhnn.com/" class="work-item__subtitle" target="_blank"
+                                    rel="noopener noreferrer" title="DHNN (design has no name)">DHNN (design has no
+                                    name)</a>
+                                <p class="work-item__desc">I collaborated with the design team to create creative
+                                    websites. I worked closely with designers and UX/UI specialists to implement
+                                    attractive front-end designs. I converted design concepts into HTML, CSS, and
+                                    JavaScript code. I adapted my skills to achieve unique and impactful solutions. I
+                                    contributed to the creation of websites that reflected the brand identity and
+                                    applied the latest web design trends.</p>
+                                <ul class="work-item__ul">
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">HTML5</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">CSS3</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">JavaScript</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">jQuery</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Illustrator</span>
+                                    </li>
+                                    <li class="work-item__li">
+                                        <span class="work-item__skill">Photoshop</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work__li viewport-observer delay-5">
+
+                        <div class="work__more">
+                            <p class="work__more__text">Would you like to know more details?</p>
+                            <a href="https://www.linkedin.com/in/patriciobalina/"
+                                class="home__button button  button--secondary" target="_blank" rel="noopener noreferrer"
+                                title="Linkedin Profile">Linkedin Profile
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="section--quote">
+            <div class="row">
+                <blockquote class="mod__quote">
+                    <img src="static/dist/images/pixel.png" data-lazyload="static/dist/images/quote/quote.png"
+                        class="mod__quote__img" alt="Design is not just what it looks like and feels like. Design is how it
+                        works." title="Design is not just what it looks like and feels like. Design is how it
+                        works." width="42" height="42">
+                    <p class="mod__quote__text texto-animado"> Design is not just what it looks like and feels like.
+                        Design is how it
+                        works.</p>
+                    <span class="mod__quote__name viewport-observer animation-bottom delay-7">Steve Jobs</span>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section section--contact" data-section="contact">
+        <div class="row">
+            <div class="mod mod__contact viewport-observer delay-3">
+                <p class="contact__subtitle">What’s next ?</p>
+                <h4 class="contact__title">Get in touch</h4>
+                <p class="contact__desc">If you want to work with me, or have any <br> questions drop a message. <br>See
+                    you on your project!</p>
+
+                <a href="mailto:paddybalinia@gmail.com?subject=Contact%20from%20website&body=Hi%20Paddy!%0D%0AHow%20are%20you%3F%0D%0AI'm%20contacting%20you%20from%20your%20website."
+                    class="contact__link button button--secondary" target="_blank" rel="noopener noreferrer"
+                    title="Contact Me">Contact
+                    Me</a>
+
+                <ul class="social__ul">
+                    <li class="social__li viewport-observer animation-bottom delay-3">
+                        <a href="mailto:paddybalinia@gmail.com?subject=Contact%20from%20website&body=Hi%20Paddy!"
+                            class="social__a" target="_blank" rel="noopener noreferrer" title="Mail">
+                            <svg class="social__svg social__svg--secondary social__svg--mail" viewBox="0 0 512 512">
+
+                                <g>
+                                    <polygon points="512,295.199 445.92,226.559 512,169.6 	" />
+                                    <polygon points="66.16,226.559 0,295.279 0,169.6 	" />
+                                    <path
+                                        d="M512,357.6v63.199c0,15.281-12.4,27.682-27.68,27.682H27.68c-15.281,0-27.68-12.4-27.68-27.682V357.6
+                               l98.959-102.721L212,352.238c11.76,10.082,27.359,15.682,44,15.682c16.641,0,32.32-5.6,44.08-15.682l112.959-97.359L512,357.6z" />
+                                    <path d="M512,91.119v27.68l-241.442,208c-7.76,6.72-21.359,6.72-29.119,0L0,118.799v-27.68
+                               c0-15.279,12.398-27.6,27.68-27.6H484.32C499.6,63.519,512,75.84,512,91.119z" />
+                                </g>
+                            </svg></a>
+                    </li>
+                    <li class="social__li viewport-observer animation-bottom delay-4">
+                        <a href="tel:+5491160416194" class="social__a" target="_blank" rel="noopener noreferrer"
+                            title="Phone">
+                            <svg class="social__svg social__svg--secondary social__svg--tel" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+                            </svg></a>
+                    </li>
+                    <li class="social__li viewport-observer animation-bottom delay-5">
+                        <a href="https://www.linkedin.com/in/patriciobalina/" class="social__a" target="_blank"
+                            rel="noopener noreferrer" title="Linkedin">
+                            <svg class="social__svg social__svg--secondary social__svg--linkedin" viewBox="0 0 32 32">
+
+                                <path
+                                    d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li class="social__li viewport-observer animation-bottom delay-6">
+                        <a href="https://github.com/paddybalinia" class="social__a" target="_blank"
+                            rel="noopener noreferrer" title="Github">
+                            <svg class="social__svg social__svg--git" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 128 128">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" />
+                                    <path
+                                        d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0" />
+                                </g>
+                            </svg></a>
+                    </li>
+                    <li class="social__li viewport-observer animation-bottom delay-7">
+                        <a href="http://wa.link/ca8d5v" class="social__a" target="_blank" rel="noopener noreferrer"
+                            title="Whatsapp">
+
+                            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="27"
+                                height="27">
+                                <path
+                                    d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- nav -->
+
+    <nav class="nav">
+        <button type="button" aria-label="close nav" class="nav__toggle" data-togglenav>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="nav__toggle">
+                <path
+                    d="M12.0002 10.6L16.2002 6.4C16.6002 6 17.2002 6 17.6002 6.4C18.0002 6.8 18.0002 7.4 17.6002 7.8L13.4002 12L17.6002 16.2C18.0002 16.6 18.0002 17.2 17.6002 17.6C17.2002 18 16.6002 18 16.2002 17.6L12.0002 13.4L7.8002 17.6C7.4002 18 6.8002 18 6.4002 17.6C6.0002 17.2 6.0002 16.6 6.4002 16.2L10.6002 12L6.3002 7.8C6.0002 7.4 6.0002 6.7 6.3002 6.3C6.7002 5.9 7.30019 5.9 7.70019 6.3L12.0002 10.6Z">
+                </path>
+            </svg>
+        </button>
+
+        <ul class="nav__ul">
+
+            <li class="nav__li">
+                <a href="#home" class="nav__a" title="Home" rel="noopener noreferrer" data-anchor="home">Home</a>
+            </li>
+            <li class="nav__li">
+                <a href="#about" class="nav__a" title="About" rel="noopener noreferrer" data-anchor="about">About</a>
+            </li>
+            <li class="nav__li">
+                <a href="#work" class="nav__a" title="Experience" rel="noopener noreferrer"
+                    data-anchor="work">Experience</a>
+            </li>
+            <li class="nav__li">
+                <a href="#contact" class="nav__a" title="Contact" rel="noopener noreferrer"
+                    data-anchor="contact">Contact</a>
+            </li>
+        </ul>
+
+        <ul class="nav__social social__ul social__ul--secondary">
+            <li class="social__li">
+                <a href="mailto:paddybalinia@gmail.com?subject=Contact%20from%20website&body=Hi%20Paddy!"
+                    class="social__a social__a--secondary" target="_blank" rel="noopener noreferrer" title="Mail">
+                    <svg class="social__svg social__svg--mail" viewBox="0 0 512 512">
+
+                        <g>
+                            <polygon points="512,295.199 445.92,226.559 512,169.6 	" />
+                            <polygon points="66.16,226.559 0,295.279 0,169.6 	" />
+                            <path
+                                d="M512,357.6v63.199c0,15.281-12.4,27.682-27.68,27.682H27.68c-15.281,0-27.68-12.4-27.68-27.682V357.6
+                       l98.959-102.721L212,352.238c11.76,10.082,27.359,15.682,44,15.682c16.641,0,32.32-5.6,44.08-15.682l112.959-97.359L512,357.6z" />
+                            <path d="M512,91.119v27.68l-241.442,208c-7.76,6.72-21.359,6.72-29.119,0L0,118.799v-27.68
+                       c0-15.279,12.398-27.6,27.68-27.6H484.32C499.6,63.519,512,75.84,512,91.119z" />
+                        </g>
+                    </svg></a>
+            </li>
+            <li class="social__li">
+                <a href="tel:+541160416194" class="social__a social__a--secondary" target="_blank"
+                    rel="noopener noreferrer" title="Phone">
+                    <svg class="social__svg social__svg--tel" viewBox="0 0 24 24">
+                        <path
+                            d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+                    </svg></a>
+            </li>
+            <li class="social__li">
+                <a href="https://www.linkedin.com/in/patriciobalina/" class="social__a social__a--secondary"
+                    target="_blank" rel="noopener noreferrer" title="Linkedin">
+                    <svg class="social__svg social__svg--linkedin" viewBox="0 0 32 32">
+
+                        <path
+                            d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z">
+                        </path>
+                    </svg></a>
+            </li>
+            <li class="social__li">
+                <a href="https://github.com/paddybalinia" class="social__a social__a--secondary" target="_blank"
+                    rel="noopener noreferrer" title="Github">
+                    <svg class="social__svg social__svg--secondary social__svg--git" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 128 128">
+                        <g>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" />
+                            <path
+                                d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0" />
+                        </g>
+                    </svg></a>
+            </li>
+        </ul>
+
+        <svg width="210" height="18" viewBox="0 0 210 18" fill="none" class="nav__logo__svg">
+            <path d="M12.2246 5.22193V7.9893L3.39305 11.5027L12.2246 15.016V17.7834L0 12.9225V10.0829L12.2246 5.22193Z"
+                fill="#1CD3C1" />
+            <path
+                d="M18.1109 17.5909V0.40909H25.8596C30.143 0.40909 31.8034 3.12834 31.8034 5.91979C31.8034 8.71123 30.143 11.4305 25.8596 11.4305H21.889V17.5909H18.1109ZM21.889 3.34492V8.49465H24.8248C26.5815 8.49465 28.1457 8.10963 28.1457 5.91979C28.1457 3.72995 26.5815 3.34492 24.8248 3.34492H21.889Z"
+                fill="#1CD3C1" />
+            <path
+                d="M41.5492 12.7781V11.5027C40.9717 12.008 39.7685 12.0321 38.7097 12.2246C37.6508 12.4412 36.6883 12.8021 36.6883 14.0535C36.6883 15.3289 37.6749 15.6417 38.7819 15.6417C41.453 15.6417 41.5492 13.5241 41.5492 12.7781ZM37.0733 8.97594H33.6562C33.8487 5.7754 36.7123 4.81283 39.5038 4.81283C41.9824 4.81283 44.9664 5.36631 44.9664 8.35027V14.8235C44.9664 15.9545 45.0867 17.0856 45.3995 17.5909H41.9343C41.8139 17.2059 41.7177 16.7968 41.6936 16.3877C40.6107 17.5187 39.0225 17.9278 37.5065 17.9278C35.1482 17.9278 33.2712 16.7487 33.2712 14.1979C33.2712 11.3824 35.3888 10.7086 37.5065 10.4198C39.6 10.107 41.5492 10.1791 41.5492 8.78342C41.5492 7.31551 40.5385 7.09893 39.3353 7.09893C38.0359 7.09893 37.1936 7.62834 37.0733 8.97594Z"
+                fill="#1CD3C1" />
+            <path
+                d="M51.9502 1.41979V5.14973H54.4529V7.43583H51.9502V13.5963C51.9502 14.7513 52.239 15.0401 53.3941 15.0401C53.755 15.0401 54.0919 15.016 54.4529 14.9438V17.615C53.8754 17.7112 53.1294 17.7353 52.4556 17.7353C50.362 17.7353 48.5331 17.254 48.5331 14.7754V7.43583H46.4636V5.14973H48.5331V1.41979H51.9502Z"
+                fill="#1CD3C1" />
+            <path
+                d="M56.0787 17.5909V5.14973H59.3274V7.45989H59.3755C60.0012 5.89572 61.6857 4.81283 63.3461 4.81283C63.5868 4.81283 63.8755 4.86096 64.0921 4.93315V8.10963C63.7793 8.03743 63.2739 7.9893 62.8648 7.9893C60.3622 7.9893 59.4959 9.79412 59.4959 11.984V17.5909H56.0787Z"
+                fill="#1CD3C1" />
+            <path d="M65.5281 17.5909V5.14973H68.9452V17.5909H65.5281ZM68.9452 0.40909V3.2246H65.5281V0.40909H68.9452Z"
+                fill="#1CD3C1" />
+            <path
+                d="M83.4514 9.52941H80.1064C79.8899 8.13369 78.9995 7.3877 77.5797 7.3877C75.3899 7.3877 74.6679 9.6016 74.6679 11.4305C74.6679 13.2112 75.3658 15.3529 77.5075 15.3529C79.0957 15.3529 80.0102 14.3422 80.2268 12.8262H83.5236C83.0904 16.123 80.8043 17.9278 77.5316 17.9278C73.7776 17.9278 71.2508 15.2807 71.2508 11.5508C71.2508 7.67647 73.561 4.81283 77.6038 4.81283C80.5396 4.81283 83.2348 6.35294 83.4514 9.52941Z"
+                fill="#1CD3C1" />
+            <path d="M85.5502 17.5909V5.14973H88.9673V17.5909H85.5502ZM88.9673 0.40909V3.2246H85.5502V0.40909H88.9673Z"
+                fill="#1CD3C1" />
+            <path
+                d="M91.273 11.3824C91.273 7.41176 93.7997 4.81283 97.6981 4.81283C101.621 4.81283 104.147 7.41176 104.147 11.3824C104.147 15.3289 101.621 17.9278 97.6981 17.9278C93.7997 17.9278 91.273 15.3289 91.273 11.3824ZM94.6901 11.3824C94.6901 13.3556 95.3879 15.3529 97.6981 15.3529C100.032 15.3529 100.73 13.3556 100.73 11.3824C100.73 9.38503 100.032 7.3877 97.6981 7.3877C95.3879 7.3877 94.6901 9.38503 94.6901 11.3824Z"
+                fill="#1CD3C1" />
+            <path
+                d="M117.206 9.9385V14.6551H121.248C122.74 14.6551 124.04 14.1738 124.04 12.393C124.04 10.6364 122.933 9.9385 121.321 9.9385H117.206ZM113.428 17.5909V0.40909H121.513C124.786 0.40909 127 1.46791 127 4.66845C127 6.35294 126.158 7.53209 124.666 8.25401C126.759 8.85561 127.818 10.4679 127.818 12.6096C127.818 16.0989 124.858 17.5909 121.754 17.5909H113.428ZM117.206 3.34492V7.36364H121.032C122.355 7.36364 123.342 6.76203 123.342 5.31818C123.342 3.68182 122.091 3.34492 120.743 3.34492H117.206Z"
+                fill="#1CD3C1" />
+            <path
+                d="M137.759 12.7781V11.5027C137.181 12.008 135.978 12.0321 134.919 12.2246C133.861 12.4412 132.898 12.8021 132.898 14.0535C132.898 15.3289 133.885 15.6417 134.992 15.6417C137.663 15.6417 137.759 13.5241 137.759 12.7781ZM133.283 8.97594H129.866C130.058 5.7754 132.922 4.81283 135.713 4.81283C138.192 4.81283 141.176 5.36631 141.176 8.35027V14.8235C141.176 15.9545 141.296 17.0856 141.609 17.5909H138.144C138.024 17.2059 137.927 16.7968 137.903 16.3877C136.82 17.5187 135.232 17.9278 133.716 17.9278C131.358 17.9278 129.481 16.7487 129.481 14.1979C129.481 11.3824 131.599 10.7086 133.716 10.4198C135.81 10.107 137.759 10.1791 137.759 8.78342C137.759 7.31551 136.748 7.09893 135.545 7.09893C134.246 7.09893 133.403 7.62834 133.283 8.97594Z"
+                fill="#1CD3C1" />
+            <path d="M143.925 17.5909V0.40909H147.342V17.5909H143.925Z" fill="#1CD3C1" />
+            <path d="M150.129 17.5909V5.14973H153.546V17.5909H150.129ZM153.546 0.40909V3.2246H150.129V0.40909H153.546Z"
+                fill="#1CD3C1" />
+            <path
+                d="M156.236 17.5909V5.14973H159.485V6.88235H159.557C160.424 5.48663 161.916 4.81283 163.359 4.81283C166.993 4.81283 167.908 6.85829 167.908 9.9385V17.5909H164.49V10.5642C164.49 8.51872 163.889 7.50802 162.301 7.50802C160.448 7.50802 159.654 8.54278 159.654 11.0695V17.5909H156.236ZM164.827 0.40909H166.488C166.319 0.962566 166.127 1.63636 165.742 2.18984C165.357 2.74331 164.779 3.15241 163.793 3.15241C163.071 3.15241 162.421 2.93583 161.819 2.74331C161.218 2.52674 160.688 2.33422 160.135 2.33422C159.485 2.33422 159.269 2.74331 159.124 3.34492H157.656C157.969 1.9492 158.571 0.40909 160.688 0.40909C161.242 0.40909 161.723 0.625668 162.228 0.818181C162.734 1.03476 163.263 1.25134 163.817 1.25134C164.539 1.25134 164.851 0.866309 164.827 0.40909Z"
+                fill="#1CD3C1" />
+            <path
+                d="M178.25 12.7781V11.5027C177.672 12.008 176.469 12.0321 175.41 12.2246C174.351 12.4412 173.389 12.8021 173.389 14.0535C173.389 15.3289 174.375 15.6417 175.482 15.6417C178.153 15.6417 178.25 13.5241 178.25 12.7781ZM173.774 8.97594H170.357C170.549 5.7754 173.413 4.81283 176.204 4.81283C178.683 4.81283 181.667 5.36631 181.667 8.35027V14.8235C181.667 15.9545 181.787 17.0856 182.1 17.5909H178.635C178.514 17.2059 178.418 16.7968 178.394 16.3877C177.311 17.5187 175.723 17.9278 174.207 17.9278C171.849 17.9278 169.972 16.7487 169.972 14.1979C169.972 11.3824 172.089 10.7086 174.207 10.4198C176.301 10.107 178.25 10.1791 178.25 8.78342C178.25 7.31551 177.239 7.09893 176.036 7.09893C174.736 7.09893 173.894 7.62834 173.774 8.97594Z"
+                fill="#1CD3C1" />
+            <path d="M185.883 18L192.597 0H195.341L188.627 18H185.883Z" fill="#1CD3C1" />
+            <path
+                d="M196.185 17.7834V15.016L205.017 11.5027L196.185 7.9893V5.22193L208.41 10.0829V12.9225L196.185 17.7834Z"
+                fill="#1CD3C1" />
+        </svg>
+
+    </nav>
+    <div class="nav__overlay" data-togglenav></div>
+
+    <!-- AMP analytics (optional) -->
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+      {
+        "vars": {
+          "account": "YOUR_GOOGLE_ANALYTICS_ACCOUNT_ID"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+    </script>
+    </amp-analytics>
+
+</body>
+
+</html>
