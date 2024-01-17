@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ⚡ lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Patricio Baliña | Front end Developer</title>
-
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="canonical" href="https://patriciobalina.com.ar/">
-
-    <link rel="amphtml" href="https://patriciobalina.com.ar/amp.html">
-
-
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
     <meta name="title" content="Patricio Baliña | Front end Developer">
     <meta name="description" content="Front end Developer with over 10 years of experience. I am a highly organized and responsible person, 
@@ -19,8 +15,6 @@
     <meta name="keywords" content="front end, front end developer,front end web developer, Front end Developer, 
         HTML, CSS, Javascript, React, Github">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/dist/images/apps/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/dist/images/apps/favicon-16x16.png">
 
     <meta property="og:title" content="Patricio Baliña | Front end Developer">
     <meta property="og:type" content="website">
@@ -71,10 +65,76 @@
     <link rel="image_src" href="https://patriciobalina.com.ar/static/dist/images/apps/facebook.jpg">
     <link rel="manifest" href="manifest.json">
 
-    <link rel="preload" href="static/dist/fonts/roboto-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="static/dist/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
 
-    <style>
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <!-- Include the AMP CSS -->
+    <style amp-custom>
+        /* Your custom styles go here */
         * {
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -946,23 +1006,359 @@
                 max-width: 680px;
             }
         }
+
+        .mod__about .box-about {
+            margin: 0 0 25px 0;
+        }
+
+        .mod__about .box-about__figure {
+            height: 100px;
+            margin: 0 0 20px;
+            width: 155px;
+        }
+
+        .mod__about .box-about__title {
+            color: rgb(0, 0, 1);
+            font: bold 18px/22px "Roboto", sans-serif;
+            margin: 0 0 6px;
+        }
+
+        .mod__about .box-about__text {
+            color: rgb(0, 0, 1);
+            font: 400 15px/20px "Roboto", sans-serif;
+            padding: 0 30px 0 0;
+        }
+
+        .skills__ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills__a {
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .skills__a:hover {
+            opacity: 0.7;
+        }
+
+        @media (min-width: 768px) {
+            .mod__skills {
+                margin: 15px 0;
+            }
+
+            .mod__about__content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+        }
+
+        .work__li {
+            padding: 10px 15px 30px 35px;
+            margin: 0 -15px;
+        }
+
+        .work__li+.work__li {
+            padding: 30px 15px 30px 35px;
+        }
+
+        .work__more {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .work__more__text {
+            font: 700 20px/24px "Roboto", sans-serif;
+            margin: 5px auto 21px;
+            max-width: 210px;
+        }
+
+        .work__line {
+            background: rgba(255, 255, 255, 0.15);
+            height: 0;
+            position: absolute;
+            width: 2px;
+            margin: 30px 0 0 0;
+        }
+
+        .work-item__aside {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .work-item__years {
+            font: 700 29px/29px "Roboto", sans-serif;
+            display: block;
+            margin: 0 0 13px;
+        }
+
+        .work-item__bg {
+            background: #1a1a1a;
+            color: white;
+            padding: 10px 0;
+            -webkit-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            opacity: 0.46;
+            position: relative;
+        }
+
+        .work-item__bg:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: white;
+            opacity: 0.46;
+            display: block;
+            position: absolute;
+            left: -32px;
+            top: 15px;
+            border-radius: 125px;
+            border: 8px solid #1a1a1a;
+        }
+
+        .work-item .mitad-viewport {
+            color: white;
+            opacity: 1;
+        }
+
+        .work-item .mitad-viewport:before {
+            opacity: 1;
+            background: white;
+        }
+
+        .work-item__title {
+            font: 400 27px/27px "Roboto", sans-serif;
+            color: #1CD3C1;
+            margin: 0 0 15px;
+        }
+
+        .work-item__title-block {
+            display: block;
+        }
+
+        .work-item__subtitle {
+            font: 700 21px/21px "Roboto", sans-serif;
+            color: #1CD3C1;
+            display: block;
+            margin: 0 0 16px;
+        }
+
+        .work-item a:hover {
+            text-decoration: underline;
+        }
+
+        .work-item__desc {
+            font: 400 16px/23px "Roboto", sans-serif;
+            margin: 0 0 19px;
+        }
+
+        .work-item__ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .work-item__skill {
+            background: #1CD3C1;
+            display: block;
+            font: 700 12px/12px "Roboto", sans-serif;
+            color: black;
+            border-radius: 4px;
+            text-transform: uppercase;
+            padding: 7px 10px 5px;
+            letter-spacing: 1px;
+        }
+
+        @media (min-width: 768px) {
+            .work__ul {
+                margin: 30px auto;
+            }
+
+            .work__li {
+                margin: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .work__li+.work__li {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .work__more {
+                padding: 30px 0 10px;
+            }
+
+            .work__more__text {
+                font: 700 30px/26px "Roboto", sans-serif;
+                max-width: 310px;
+            }
+
+            .work__line {
+                display: block;
+                margin: 30px 0 0 79px;
+            }
+
+            .work-item {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+
+            .work-item__aside {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 22%;
+                flex: 0 0 22%;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+            }
+
+            .work-item__bg:before {
+                display: none;
+            }
+
+            .work-item__years {
+                margin: 0 0 0;
+            }
+        }
+
+        .mod__contact {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contact__subtitle {
+            font: 400 18px/19px "Roboto", sans-serif;
+        }
+
+        .contact__title {
+            font: 700 34px/36px "Roboto", sans-serif;
+            margin: -2px 0 0;
+        }
+
+        .contact__desc {
+            font: 400 16px/19px "Roboto", sans-serif;
+            margin: 23px 0 0;
+        }
+
+        .contact__link {
+            margin: 50px auto;
+        }
+
+        @media (min-width: 768px) {
+            .contact__subtitle {
+                font: 400 30px/30px "Roboto", sans-serif;
+            }
+
+            .contact__title {
+                font: bold 41px/41px "Roboto", sans-serif;
+                margin: -6px 0 0;
+            }
+        }
+
+        .section--quote {
+            background: #fafafa;
+            margin: 0 0 -32px;
+        }
+
+        .mod__quote {
+            margin: 0;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .mod__quote__img {
+            height: 30px;
+            width: auto;
+            margin: 0 0 6px;
+        }
+
+        .mod__quote__text {
+            color: rgb(0, 0, 1);
+            font: bold 24px/27px "Roboto", sans-serif;
+            margin: 0 0 15px;
+        }
+
+        .mod__quote__name {
+            color: rgb(0, 0, 1);
+            display: block;
+            font: 400 14px/14px "Roboto", sans-serif;
+        }
+
+        .mod__quote__name:before {
+            content: "";
+            background: rgb(0, 0, 1);
+            display: block;
+            height: 1px;
+            margin: 0 0 8px;
+            width: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .mod__quote {
+                margin: auto;
+                max-width: 860px;
+                padding: 80px 0 100px;
+            }
+
+            .mod__quote__img {
+                position: absolute;
+                left: -60px;
+                height: 42px;
+            }
+
+            .mod__quote__text {
+                font: bold 51px/54px "Roboto", sans-serif;
+                margin: 0 0 25px;
+            }
+
+            .mod__quote__name {
+                font: 400 14px/14px "Roboto", sans-serif;
+            }
+
+            .mod__quote__name:before {
+                margin: 0 0 15px;
+            }
+        }
     </style>
-
-    <link rel="stylesheet" href="static/dist/css/style.min.css" media="all">
-
-    <!-- Google tag (gtag.js) -->
-    <!-- Carga asincrónica de GTM -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'G-10DM779VVX');
-    </script>
-
 
     <script type="application/ld+json">
     {
@@ -990,7 +1386,6 @@
       }
     }
     </script>
-
 </head>
 
 <body>
@@ -1166,8 +1561,7 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-1">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-efective.svg" class="box-about__img"
+                                <img src="static/dist/images/about/about-efective.svg" class="box-about__img"
                                     alt="Effective Communication" title="Effective Communication" width="155"
                                     height="100">
                             </figure>
@@ -1179,8 +1573,7 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-3">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-problems.svg" class="box-about__img"
+                                <img src="static/dist/images/about/about-problems.svg" class="box-about__img"
                                     alt="Problem Solving" title="Problem Solving" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Problem Solving</h3>
@@ -1191,8 +1584,7 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-5">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-creativity.svg" class="box-about__img"
+                                <img src="static/dist/images/about/about-creativity.svg" class="box-about__img"
                                     alt="Creativity and Design" title="Creativity and Design" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Creativity and Design</h3>
@@ -1203,10 +1595,8 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-7">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-adaptability.svg"
-                                    class="box-about__img" alt="Adaptability" title="Adaptability" width="155"
-                                    height="100">
+                                <img src="static/dist/images/about/about-adaptability.svg" class="box-about__img"
+                                    alt="Adaptability" title="Adaptability" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Adaptability</h3>
                             <p class="box-about__text">I am always willing to learn new technologies and stay up-to-date
@@ -1217,10 +1607,9 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-9">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-timemanagement.svg"
-                                    class="box-about__img" alt="Time Management and Organization"
-                                    title="Time Management and Organization" width="155" height="100">
+                                <img src="static/dist/images/about/about-timemanagement.svg" class="box-about__img"
+                                    alt="Time Management and Organization" title="Time Management and Organization"
+                                    width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Time Management and Organization</h3>
                             <p class="box-about__text">Ability to set priorities and meet deadlines. Experience with
@@ -1230,10 +1619,8 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-11">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-attentiontodetail.svg"
-                                    class="box-about__img" alt="Attention to Detail" title="Attention to Detail"
-                                    width="155" height="100">
+                                <img src="static/dist/images/about/about-attentiontodetail.svg" class="box-about__img"
+                                    alt="Attention to Detail" title="Attention to Detail" width="155" height="100">
                             </figure>
                             <h3 class="box-about__title">Attention to Detail</h3>
                             <p class="box-about__text">I focus on creating high-quality, error-free websites. You can
@@ -1243,10 +1630,9 @@
                     <div class="mod__about__col">
                         <div class="box-about viewport-observer animation-bottom delay-13">
                             <figure class="box-about__figure">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/about/about-empathylistening.svg"
-                                    class="box-about__img" alt="Empathy and Active Listening"
-                                    title="Empathy and Active Listening" width="155" height="100">
+                                <img src="static/dist/images/about/about-empathylistening.svg" class="box-about__img"
+                                    alt="Empathy and Active Listening" title="Empathy and Active Listening" width="155"
+                                    height="100">
                             </figure>
                             <h3 class="box-about__title">Empathy and Active Listening</h3>
                             <p class="box-about__text">I strive to understand the needs and expectations of end-users
@@ -1265,127 +1651,111 @@
                         <li class="skills__li viewport-observer delay-3">
                             <a href="https://www.w3schools.com/css/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="CSS 3">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/css3.svg" alt="CSS 3" title="CSS 3"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/css3.svg" alt="CSS 3" title="CSS 3" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-3">
                             <a href="https://www.w3.org/html/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="HTML 5">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/html5.svg" alt="HTML 5" title="HTML 5"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/html5.svg" alt="HTML 5" title="HTML 5" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-4">
                             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skills__a"
                                 target="_blank" rel="noopener noreferrer" title="JavaScript">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/javascript.svg" alt="JavaScript"
-                                    title="JavaScript" width="30" height="30">
+                                <img src="static/dist/images/skills/javascript.svg" alt="JavaScript" title="JavaScript"
+                                    width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-5">
                             <a href="https://sass-lang.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="SASS">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/sass.svg" alt="SASS" title="SASS"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/sass.svg" alt="SASS" title="SASS" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-6">
                             <a href="https://gulpjs.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Gulp">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/gulp.svg" alt="Gulp" title="Gulp"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/gulp.svg" alt="Gulp" title="Gulp" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-7">
                             <a href="https://git-scm.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Git">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/git.svg" alt="Git" title="Git" width="30"
+                                <img src="static/dist/images/skills/git.svg" alt="Git" title="Git" width="30"
                                     height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-8">
                             <a href="https://www.figma.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Figma">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/figma.svg" alt="Figma" title="Figma"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/figma.svg" alt="Figma" title="Figma" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-9">
                             <a href="https://jquery.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="jQuery">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/jquery.svg" alt="jQuery" title="jQuery"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/jquery.svg" alt="jQuery" title="jQuery" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-10">
                             <a href="https://react.dev/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="React JS">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/react.svg" alt="React JS" title="React JS"
+                                <img src="static/dist/images/skills/react.svg" alt="React JS" title="React JS"
                                     width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-11">
                             <a href="https://www.adobe.com/in/products/illustrator.html" class="skills__a"
                                 target="_blank" rel="noopener noreferrer" title="illustrator">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/illustrator.svg" alt="illustrator"
+                                <img src="static/dist/images/skills/illustrator.svg" alt="illustrator"
                                     title="illustrator" width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-12">
                             <a href="https://www.adobe.com/products/photoshop.html" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="photoshop">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/photoshop.svg" alt="photoshop"
-                                    title="photoshop" width="30" height="30">
+                                <img src="static/dist/images/skills/photoshop.svg" alt="photoshop" title="photoshop"
+                                    width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-13">
                             <a href="https://www.sketch.com/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="sketch">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/sketch.svg" alt="sketch" title="sketch"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/sketch.svg" alt="sketch" title="sketch" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-14">
                             <a href="https://helpx.adobe.com/support/xd.html" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="xd">
-                                <img src="static/dist/images/pixel.png" data-lazyload="static/dist/images/skills/xd.svg"
-                                    alt="xd" title="xd" width="30" height="30">
+                                <img src="static/dist/images/skills/xd.svg" alt="xd" title="xd" width="30" height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-15">
                             <a href="https://github.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="Github">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/github.svg" alt="Github" title="GitHub"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/github.svg" alt="Github" title="GitHub" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-16">
                             <a href="https://code.visualstudio.com/" class="skills__a" target="_blank"
                                 rel="noopener noreferrer" title="VC Code">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/vscode.svg" alt="VC Code" title="VC Code"
-                                    width="30" height="30">
+                                <img src="static/dist/images/skills/vscode.svg" alt="VC Code" title="VC Code" width="30"
+                                    height="30">
                             </a>
                         </li>
                         <li class="skills__li viewport-observer delay-17">
                             <a href="https://getbem.com/" class="skills__a" target="_blank" rel="noopener noreferrer"
                                 title="BEM">
-                                <img src="static/dist/images/pixel.png"
-                                    data-lazyload="static/dist/images/skills/bem.svg" alt="BEM" title="BEM" width="30"
+                                <img src="static/dist/images/skills/bem.svg" alt="BEM" title="BEM" width="30"
                                     height="30">
                             </a>
                         </li>
@@ -1656,8 +2026,7 @@
         <div class="section--quote">
             <div class="row">
                 <blockquote class="mod__quote">
-                    <img src="static/dist/images/pixel.png" data-lazyload="static/dist/images/quote/quote.png"
-                        class="mod__quote__img" alt="Design is not just what it looks like and feels like. Design is how it
+                    <img src="static/dist/images/quote/quote.png" class="mod__quote__img" alt="Design is not just what it looks like and feels like. Design is how it
                         works." title="Design is not just what it looks like and feels like. Design is how it
                         works." width="42" height="42">
                     <p class="mod__quote__text texto-animado"> Design is not just what it looks like and feels like.
@@ -1875,20 +2244,22 @@
     </nav>
     <div class="nav__overlay" data-togglenav></div>
 
-    <button class="scroll-up" aria-label="Scroll up" data-anchor="home">scroll up</button>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registrado con éxito:', registration);
-                })
-                .catch(error => {
-                    console.log('Error al registrar el Service Worker:', error);
-                });
+    <!-- AMP analytics (optional) -->
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+      {
+        "vars": {
+          "account": "YOUR_GOOGLE_ANALYTICS_ACCOUNT_ID"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
         }
+      }
     </script>
-    <script async src="static/dist/js/Home-min.js"></script>
+    </amp-analytics>
 
 </body>
 
