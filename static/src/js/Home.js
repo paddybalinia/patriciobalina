@@ -61,15 +61,26 @@
   function update() {
     const menuLinks = document.querySelectorAll(".header__ul a");
 
-    Header.classList[lastScrollY >= startSticky - 350 ? "add" : "remove"](
+    var scrollPosition = lastScrollY;
+    var updateScroll = Math.max(scrollPosition - 350 - Header.offsetHeight);
+
+    Header.classList[scrollPosition >= 70 ? "add" : "remove"](
       "header--beforesticky"
     );
-    Header.classList[lastScrollY >= startSticky - 150 ? "add" : "remove"](
-      "header--animation"
-    );
-    Header.classList[lastScrollY >= startSticky ? "add" : "remove"](
-      "header--sticky"
-    );
+
+    if (scrollPosition > 350 && updateScroll < 0) {
+      Header.style.position = "fixed";
+      Header.style.top = updateScroll + "px";
+    }
+
+    if (updateScroll >= 0) {
+      Header.style.top = 0 + "px";
+    }
+
+    if (scrollPosition < 350) {
+      Header.style.position = "absolute";
+      Header.style.top = "0";
+    }
 
     ButtonScrollUp.classList[lastScrollY >= viewportHeight ? "add" : "remove"](
       "visible"
@@ -284,6 +295,15 @@
 
 (function () {
   "use strict";
+
+  // Get the viewport height
+  var viewportHeight = window.innerHeight;
+
+  // Assign the viewport height to the section with the class .section--home.
+  var homeSection = document.querySelector(".section--home");
+  if (homeSection) {
+    homeSection.style.height = viewportHeight + "px";
+  }
 
   function moveIt() {
     var windowElement = window;

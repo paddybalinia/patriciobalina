@@ -1,6 +1,15 @@
 (function () {
   "use strict";
 
+  // Get the viewport height
+  var viewportHeight = window.innerHeight;
+
+  // Assign the viewport height to the section with the class .section--home.
+  var homeSection = document.querySelector(".section--home");
+  if (homeSection) {
+    homeSection.style.height = viewportHeight + "px";
+  }
+
   function moveIt() {
     var windowElement = window;
     var instances = [];
