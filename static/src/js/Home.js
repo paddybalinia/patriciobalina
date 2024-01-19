@@ -290,6 +290,9 @@
       }
       elemento.style.height = nuevaAltura + "px";
     }
+    if (scrollPosY < elementoTop) {
+      elemento.style.height = 0 + "px";
+    }
   });
 })(window, document);
 

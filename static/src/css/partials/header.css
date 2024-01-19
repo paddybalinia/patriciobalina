@@ -109,19 +109,19 @@
     gap: 15px;
     top: 11px;
   }
-  .header--sticky .header__nav__a.active {
+  .header--beforesticky .header__nav__a.active {
     color: black;
   }
-  .header--sticky .header__nav__a.active:after {
+  .header--beforesticky .header__nav__a.active:after {
     background: black;
   }
-  .header--sticky .social__a:hover {
+  .header--beforesticky .social__a:hover {
     background: black;
   }
-  .header--sticky .social__a:hover svg {
+  .header--beforesticky .social__a:hover svg {
     fill: white;
   }
-  .header--sticky .social__a:hover::after {
+  .header--beforesticky .social__a:hover::after {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
   }
