@@ -8,6 +8,7 @@
 .work__more {
   text-align: center;
   padding: 10px 0;
+  margin-left: -20px;
 }
 .work__more__text {
   font: 700 20px/24px "Roboto", sans-serif;
