@@ -284,7 +284,7 @@
     // Verificar si el elemento está en la mitad superior del viewport y aún no ha alcanzado el punto de parada
     if (
       elementoTop < viewportHeight / 2 &&
-      scrollPosY < scrollStop + 60 - viewportHeight / 2
+      scrollPosY < scrollStop + 45 - viewportHeight / 2
     ) {
       // Aplicar la nueva altura al estilo del elemento
 
