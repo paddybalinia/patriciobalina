@@ -278,17 +278,20 @@
     // Ajustar la altura según necesidades específicas
     nuevaAltura = (nuevaAltura - 2868) * 0.25;
 
+    var anchoViewport = window.innerWidth,
+      gap = anchoViewport > 760 ? 90 : 250;
+
     // Verificar si el elemento está en la mitad superior del viewport y aún no ha alcanzado el punto de parada
     if (
       elementoTop < viewportHeight / 2 &&
-      scrollPosY < scrollStop - viewportHeight / 2
+      scrollPosY < scrollStop + 60 - viewportHeight / 2
     ) {
       // Aplicar la nueva altura al estilo del elemento
-      var anchoViewport = window.innerWidth;
+
       if (anchoViewport < 768) {
         nuevaAltura = nuevaAltura - viewportHeight / 2;
       }
-      elemento.style.height = nuevaAltura + "px";
+      elemento.style.height = nuevaAltura - gap + "px";
     }
     if (scrollPosY < elementoTop) {
       elemento.style.height = 0 + "px";
@@ -301,10 +304,11 @@
 
   // Get the viewport height
   var viewportHeight = window.innerHeight;
+  var viewportWidth = window.innerWidth;
 
   // Assign the viewport height to the section with the class .section--home.
   var homeSection = document.querySelector(".section--home");
-  if (homeSection) {
+  if (homeSection && viewportWidth < 760) {
     homeSection.style.height = viewportHeight + "px";
   }
 

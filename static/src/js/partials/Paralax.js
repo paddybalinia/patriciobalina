@@ -3,10 +3,11 @@
 
   // Get the viewport height
   var viewportHeight = window.innerHeight;
+  var viewportWidth = window.innerWidth;
 
   // Assign the viewport height to the section with the class .section--home.
   var homeSection = document.querySelector(".section--home");
-  if (homeSection) {
+  if (homeSection && viewportWidth < 760) {
     homeSection.style.height = viewportHeight + "px";
   }
 
