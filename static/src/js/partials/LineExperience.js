@@ -23,12 +23,27 @@
     }
   }
 
+  // Función para obtener la posición en Y del elemento con respecto al cuerpo
+  function getElementY(elemento) {
+    var posicionY = 0;
+
+    while (elemento) {
+      posicionY += elemento.offsetTop;
+      elemento = elemento.offsetParent;
+    }
+
+    return posicionY;
+  }
+
   window.addEventListener("scroll", function () {
     verificarPosicion();
 
     // Obtener referencias a los elementos necesarios
-    var elemento = document.getElementById("linea");
     var lineastop = document.getElementById("stop-linea");
+    var elemento = document.getElementById("linea");
+
+    // Obtener la posición en Y del elemento con respecto al cuerpo de la página
+    var posicionY = getElementY(elemento);
 
     // Calcular la posición del elemento de parada con respecto al viewport
     var scrollStop = lineastop.getBoundingClientRect().top + window.scrollY;
@@ -43,31 +58,17 @@
     // Obtener la posición actual de scroll
     var scrollPosY = window.scrollY || window.pageYOffset;
 
-    // Calcular la altura de incremento basada en la posición del elemento y del scroll
-    var alturaIncremento = (viewportHeight / 2 - elementoTop + scrollPosY) * 2;
-
-    // Asegurarse de que la alturaIncremento no sea menor que 0
-    var nuevaAltura = Math.max(alturaIncremento, 0);
-
-    // Ajustar la altura según necesidades específicas
-    nuevaAltura = (nuevaAltura - 2868) * 0.25;
-
-    var anchoViewport = window.innerWidth,
-      gap = anchoViewport > 760 ? 90 : 250;
+    var lineHeight = Math.max(scrollPosY - (posicionY - viewportHeight / 2), 0);
 
     // Verificar si el elemento está en la mitad superior del viewport y aún no ha alcanzado el punto de parada
     if (
       elementoTop < viewportHeight / 2 &&
-      scrollPosY < scrollStop + 45 - viewportHeight / 2
+      scrollPosY < scrollStop - viewportHeight / 2
     ) {
       // Aplicar la nueva altura al estilo del elemento
-
-      if (anchoViewport < 768) {
-        nuevaAltura = nuevaAltura - viewportHeight / 2;
-      }
-      elemento.style.height = nuevaAltura - gap + "px";
+      elemento.style.height = lineHeight + "px";
     }
-    if (scrollPosY < elementoTop) {
+    if (lineHeight <= 0) {
       elemento.style.height = 0 + "px";
     }
   });
