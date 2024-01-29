@@ -1,3 +1,7 @@
+.mod__experience .mod__header {
+  margin: 30px 0;
+}
+
 .work__li {
   padding: 10px 15px 30px 35px;
   margin: 0 -15px;
@@ -111,6 +115,9 @@
 }
 
 @media (min-width: 768px) {
+  .mod__experience .mod__header {
+    margin: 30px 0 45px;
+  }
   .work__ul {
     margin: 30px auto;
   }
@@ -118,6 +125,8 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
   .work__li + .work__li {
     padding-left: 0;

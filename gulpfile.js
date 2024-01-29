@@ -74,6 +74,7 @@ const jsFiles = [
   "static/src/js/partials/ViewportObserver.js",
   "static/src/js/partials/LineExperience.js",
   "static/src/js/partials/Paralax.js",
+  "static/src/js/partials/WorkEffect.js",
   "static/src/js/partials/TyperText.js",
 ];
 

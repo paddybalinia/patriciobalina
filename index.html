@@ -1399,13 +1399,13 @@
     <!-- work -->
     <section id="work" class="section section--work" data-section="work">
         <div class="row">
-            <div class="mod mod__skills">
+            <div class="mod mod__experience">
                 <div class="mod__header">
                     <h2 class="mod__header__title secondary">Work experience</h2>
                 </div>
                 <span id="linea" class="work__line"></span>
                 <ul class="work__ul">
-                    <li class="work__li viewport-observer animation-bottom">
+                    <li class="work__li viewport-observer animation-bottom" data-speed="0.07">
                         <div class="work-item">
                             <div class="work-item__aside">
 
@@ -1454,7 +1454,7 @@
                         </div>
                     </li>
 
-                    <li class="work__li viewport-observer animation-bottom">
+                    <li class="work__li viewport-observer animation-bottom" data-speed="0.07">
                         <div class="work-item">
                             <div class="work-item__aside">
 
@@ -1513,7 +1513,7 @@
                         </div>
                     </li>
 
-                    <li class="work__li viewport-observer animation-bottom">
+                    <li class="work__li viewport-observer animation-bottom" data-speed="0.07">
                         <div class="work-item">
                             <div class="work-item__aside">
 
@@ -1559,7 +1559,7 @@
                         </div>
                     </li>
 
-                    <li class="work__li viewport-observer animation-bottom">
+                    <li class="work__li viewport-observer animation-bottom" data-speed="0.07">
                         <div class="work-item">
                             <div class="work-item__aside">
 
@@ -1598,7 +1598,7 @@
                         </div>
                     </li>
 
-                    <li class="work__li viewport-observer animation-bottom">
+                    <li class="work__li viewport-observer animation-bottom" data-speed="0.07">
                         <div class="work-item">
                             <div class="work-item__aside">
 
@@ -1640,7 +1640,7 @@
                         </div>
                     </li>
 
-                    <li class="work__li viewport-observer delay-5">
+                    <li class="work__li viewport-observer delay-5" data-speed="0.07">
 
                         <div class="work__more">
                             <p class="work__more__text">Would you like to know more details?</p>
@@ -1890,6 +1890,32 @@
         }
     </script>
     <script async src="static/dist/js/Home-min.js"></script>
+
+
+    <script>
+        // const parallaxElements = document.querySelectorAll('.work__li');
+
+        // function updateParallax() {
+        //     parallaxElements.forEach(function (element) {
+        //         const rect = element.getBoundingClientRect();
+        //         const speed = parseFloat(element.getAttribute('data-speed'));
+
+
+        //         // Verificar si el elemento está en el viewport
+        //         if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        //             const yPos = -(rect.top * speed);
+        //             element.style.transform = 'translate3d(0, ' + yPos + 'px, 0)';
+        //         } else {
+        //             element.style.transform = 'translate3d(0, 0, 0)';
+        //         }
+        //     });
+        // }
+
+        // // Actualizar el efecto parallax al desplazarse y al cargar la página
+        // window.addEventListener('scroll', updateParallax);
+        // window.addEventListener('resize', updateParallax);
+        // document.addEventListener('DOMContentLoaded', updateParallax);
+    </script>
 
 </body>
 
