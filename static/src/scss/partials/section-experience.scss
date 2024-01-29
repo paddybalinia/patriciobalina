@@ -1,5 +1,11 @@
 @import '../vars.scss';
 
+.mod__experience {
+    .mod__header {
+        margin: 30px 0;
+    }
+}
+
 .work {
 
     &__li {
@@ -126,15 +132,24 @@
 }
 
 @media (min-width: 768px) {
+
+    .mod__experience {
+        .mod__header {
+            margin: 30px 0 45px;
+        }
+    }
+
     .work {
         &__ul {
             margin: 30px auto;
         }
 
+
         &__li {
             margin: 0;
             padding-left: 0;
             padding-right: 0;
+            transition: all .2s ease;
 
             &+.work__li {
                 padding-left: 0;
