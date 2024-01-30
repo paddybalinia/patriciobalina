@@ -71,6 +71,8 @@
     <link rel="image_src" href="https://patriciobalina.com.ar/static/dist/images/apps/facebook.jpg">
     <link rel="manifest" href="manifest.json">
 
+    <link rel="preload" as="image" href="static/dist/images/background.jpg" />
+
     <link rel="preload" href="static/dist/fonts/roboto-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="static/dist/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -1144,8 +1146,8 @@
 
     <!-- home -->
     <section id="home" class="section section--home" data-section="home">
-        <img class="home__img" src="static/dist/images/background.jpg" width="1200" height="600" title="img"
-            alt="img" />
+        <img class="home__img" src="static/dist/images/pixel.png" data-lazyload="static/dist/images/background.jpg"
+            width="1200" height="600" title="img" alt="img" />
         <div class="row">
             <div class="home" data-scroll-speed="6">
                 <h1 class="home__title">
