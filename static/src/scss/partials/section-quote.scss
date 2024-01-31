@@ -20,6 +20,7 @@
         color: $color-primary;
         font: bold 24px/27px $font-primary;
         margin: 0 0 15px;
+        min-height: 54px;
     }
 
     &__name {
@@ -55,6 +56,7 @@
         &__text {
             font: bold 51px/54px $font-primary;
             margin: 0 0 25px;
+            min-height: 108px;
         }
 
         &__name {
