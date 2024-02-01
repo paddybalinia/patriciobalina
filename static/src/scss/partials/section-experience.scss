@@ -48,6 +48,7 @@
         display: flex;
     }
 
+
     &__years {
         font: 700 29px/29px $font-primary;
         display: block;
@@ -108,6 +109,21 @@
         text-decoration: underline;
     }
 
+    &__figure {
+        margin-bottom: -60px;
+    }
+
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__title,
+    &__subtitle {
+        margin-left: 80px;
+    }
+
+
     &__desc {
         font: 400 16px/23px $font-primary;
         margin: 0 0 19px;
@@ -138,6 +154,7 @@
             margin: 30px 0 45px;
         }
     }
+
 
     .work {
         &__ul {
@@ -176,11 +193,26 @@
         display: flex;
 
         &__aside {
-            flex: 0 0 22%;
+            flex: 0 0 18%;
             flex-direction: row;
             flex-wrap: nowrap;
             display: flex;
             justify-content: space-between;
+        }
+
+        &__main {
+            display: flex;
+            gap: 20px;
+        }
+
+        &__title,
+        &__subtitle {
+            margin-left: 0;
+        }
+
+        &__img {
+            width: 60px;
+            height: 60px;
         }
 
         &__bg {
