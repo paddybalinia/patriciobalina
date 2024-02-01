@@ -91,6 +91,16 @@
 .work-item a:hover {
   text-decoration: underline;
 }
+.work-item__figure {
+  margin-bottom: -60px;
+}
+.work-item__img {
+  width: 60px;
+  height: 60px;
+}
+.work-item__title, .work-item__subtitle {
+  margin-left: 80px;
+}
 .work-item__desc {
   font: 400 16px/23px "Roboto", sans-serif;
   margin: 0 0 19px;
@@ -150,8 +160,8 @@
   }
   .work-item__aside {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 22%;
-            flex: 0 0 22%;
+        -ms-flex: 0 0 18%;
+            flex: 0 0 18%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -164,6 +174,19 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .work-item__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .work-item__title, .work-item__subtitle {
+    margin-left: 0;
+  }
+  .work-item__img {
+    width: 60px;
+    height: 60px;
   }
   .work-item__bg:before {
     display: none;
