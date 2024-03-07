@@ -577,10 +577,12 @@ input {
 @media (min-width: 760px) {
   .header {
     height: 63px;
-    top: 10px;
+    top: 0px;
+    margin-top: 20px;
   }
   .header--beforesticky {
     top: -100%;
+    margin-top: 0px;
   }
   .header__toggle {
     top: 17px;

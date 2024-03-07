@@ -63,10 +63,12 @@
 
     .header {
         height: 63px;
-        top: 10px;
+        top: 0px;
+        margin-top: 20px;
 
         &--beforesticky {
             top: -100%;
+            margin-top: 0px;
         }
 
         &__toggle {
